@@ -94,3 +94,6 @@ nav ul li a {
 #services h2 {
     font-size: 36px;
     text
+html {
+    scroll-behavior: smooth;
+}
