@@ -122,7 +122,7 @@ nav ul li a {
 }
 
 .doctor-names {
-    font-size: 40px;
+    font-size: 28px;  /* Smaller than About Us title */
     font-weight: bold;
     color: #d18b6c;  /* Slightly brown color */
     letter-spacing: 2px;
@@ -169,45 +169,4 @@ nav ul li a {
 }
 
 .copy-btn {
-    background-color: #d18b6c;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.copy-btn:hover {
-    background-color: #a6754f;
-}
-
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* About Us Section - Bold Name Styling */
-#about h3 {
-    font-weight: bold;
-    color: #d18b6c;
-    margin-bottom: 20px;
-}
-
-#about p strong {
-    color: #d18b6c; /* Slightly different color for the names */
-}
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-    .contact-box {
-        flex-direction: column;
-    }
-}
+    background-color: #
