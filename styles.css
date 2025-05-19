@@ -107,16 +107,27 @@ nav ul li a {
 }
 
 /* About Us Section */
-#about {
+#about, #contact {
     padding: 60px 20px;
     background: #855c42; /* Medium Brown */
+    color: #fffae6; /* Brighter text */
+    animation: fadeIn 1s ease-out;
 }
 
-#about h2 {
+#about h2, #contact h2 {
     font-size: 36px;
     text-align: center;
     color: #fffae6; /* Brighter text */
     margin-bottom: 30px;
 }
 
-/*
+/* Contact Box */
+.contact-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact
