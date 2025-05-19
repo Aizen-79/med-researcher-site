@@ -112,6 +112,7 @@ nav ul li a {
     background: #855c42; /* Medium Brown */
     color: #fffae6; /* Brighter text */
     animation: fadeIn 1s ease-out;
+    margin-top: 30px;
 }
 
 #about h2, #contact h2 {
@@ -121,13 +122,11 @@ nav ul li a {
     margin-bottom: 30px;
 }
 
-/* Contact Box */
-.contact-box {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+#about p, #contact p {
+    font-size: 18px;
+    color: #fffae6; /* Brighter color */
 }
 
-.contact
+/* Contact Us Section */
+#contact {
+    padding: 60px 20
