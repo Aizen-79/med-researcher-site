@@ -13,20 +13,6 @@ body {
     line-height: 1.6;
 }
 
-/* Contact Section at the top */
-.contact-top {
-    background-color: #6f4f29; /* Dark brown */
-    padding: 10px;
-    text-align: center;
-    color: #fffae6; /* Very light yellow for bright contrast */
-    font-size: 16px;
-}
-
-.contact-info p {
-    margin: 0;
-    font-weight: 600;
-}
-
 /* Header Styles */
 header {
     background: #6f4f29; /* Brown color */
@@ -39,15 +25,6 @@ header {
     align-items: center;
 }
 
-header .logo h1 {
-    font-size: 36px;
-    letter-spacing: 2px;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #fffae6; /* Bright color */
-}
-
-/* Navigation Styles */
 nav ul {
     list-style: none;
     display: flex;
@@ -166,25 +143,4 @@ nav ul li a {
 #about h2 {
     font-size: 36px;
     text-align: center;
-    color: #fffae6; /* Brighter text */
-    margin-bottom: 30px;
-}
-
-#about p {
-    font-size: 18px;
-    color: #fffae6; /* Brighter text */
-    text-align: center;
-}
-
-#about strong {
-    font-size: 20px;
-    color: #fffae6; /* Brighter text */
-}
-
-/* Footer Styles */
-footer {
-    background: #6f4f29;
-    color: #fffae6; /* Brighter text */
-    padding: 10px;
-    text-align: center;
-}
+    color: #fffae6; /* Brighter text
