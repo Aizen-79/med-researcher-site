@@ -8,9 +8,23 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f2f2f2;
-    color: #333;
+    background: #f7f7f7; /* Light background for contrast */
+    color: #555; /* Lighter color for text */
     line-height: 1.6;
+}
+
+/* Contact Section at the top */
+.contact-top {
+    background-color: #6f4f29; /* Dark brown */
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+.contact-info p {
+    margin: 0;
+    font-weight: 600;
 }
 
 /* Header Styles */
@@ -25,22 +39,12 @@ header {
     align-items: center;
 }
 
-header .logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo-img {
-    width: 50px; /* Adjust this size as needed */
-    height: auto;
-    margin-right: 10px; /* Space between logo and text */
-}
-
 header .logo h1 {
     font-size: 36px;
     letter-spacing: 2px;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    color: #fff;
 }
 
 /* Navigation Styles */
@@ -72,10 +76,12 @@ nav ul li a {
 #home h1 {
     font-size: 42px;
     margin-bottom: 20px;
+    color: #fff; /* Brighter color */
 }
 
 #home p {
     font-size: 18px;
+    color: #fff; /* Brighter color */
 }
 
 .cta-button {
@@ -120,6 +126,7 @@ nav ul li a {
 .service-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #fff; /* Bright text color */
 }
 
 .service-price-button {
@@ -138,25 +145,16 @@ nav ul li a {
 }
 
 /* Price Details Section */
-#prices {
-    padding: 60px 20px;
-    background: #6f4f29; /* Brown color */
+.service-price-info {
+    margin-top: 15px;
+    background-color: #d18b6c;
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Initially hidden */
 }
 
-#prices h2 {
-    font-size: 36px;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 30px;
-}
-
-.price-item {
-    background: #4e3629; /* Brown color */
-    color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.service-price-button:hover + .service-price-info {
+    display: block;
 }
 
 /* About Us Section */
@@ -174,8 +172,13 @@ nav ul li a {
 
 #about p {
     font-size: 18px;
-    color: #fff;
+    color: #fff; /* Bright color */
     text-align: center;
+}
+
+#about strong {
+    font-size: 20px;
+    color: #fff; /* Bright color */
 }
 
 /* Footer Styles */
