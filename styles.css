@@ -1,15 +1,15 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f7f7f7; /* Light background for contrast */
-    color: #333; /* Lighter text color for better readability */
+    background: #f7f7f7;
+    color: #333;
     line-height: 1.6;
 }
 
-/* Header Styles */
+/* Header Section */
 header {
-    background: #6f4f29; /* Brown color */
-    color: #fffae6; /* Bright, light yellow text */
+    background: #6f4f29;
+    color: #fffae6;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -31,7 +31,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fffae6; /* Bright color */
+    color: #fffae6;
     font-weight: 600;
     font-size: 18px;
 }
@@ -40,23 +40,23 @@ nav ul li a {
 #home {
     text-align: center;
     padding: 80px 20px;
-    background: #4e3629; /* Darker Brown */
+    background: #4e3629;
 }
 
 #home h1 {
     font-size: 42px;
     margin-bottom: 20px;
-    color: #fffae6; /* Brighter text */
+    color: #fffae6;
 }
 
 #home p {
     font-size: 18px;
-    color: #fffae6; /* Brighter color */
+    color: #fffae6;
 }
 
 .cta-button {
-    background-color: #d18b6c; /* Light Brown */
-    color: #fff; /* Brighter color */
+    background-color: #d18b6c;
+    color: #fff;
     padding: 15px 30px;
     text-decoration: none;
     font-weight: bold;
@@ -68,25 +68,25 @@ nav ul li a {
 }
 
 .cta-button:hover {
-    background-color: #a6754f; /* Hover color */
+    background-color: #a6754f;
 }
 
 /* Services Section */
 #services {
     padding: 60px 20px;
-    background: #855c42; /* Medium Brown */
+    background: #855c42;
 }
 
 #services h2 {
     font-size: 36px;
     text-align: center;
-    color: #fffae6; /* Brighter text */
+    color: #fffae6;
     margin-bottom: 30px;
 }
 
 .service-item {
-    background: #4e3629; /* Brown color */
-    color: #fffae6; /* Brighter text */
+    background: #4e3629;
+    color: #fffae6;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -96,21 +96,20 @@ nav ul li a {
 .service-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #fffae6; /* Brighter text */
+    color: #fffae6;
 }
 
-/* Service Price Styling */
 .service-price {
     font-size: 18px;
-    color: #d18b6c; /* Slightly different color for price text */
+    color: #d18b6c;
     margin-top: 10px;
 }
 
 /* About Us Section */
 #about, #contact {
     padding: 60px 20px;
-    background: #855c42; /* Medium Brown */
-    color: #fffae6; /* Brighter text */
+    background: #855c42;
+    color: #fffae6;
     animation: fadeIn 1s ease-out;
     margin-top: 30px;
 }
@@ -118,48 +117,48 @@ nav ul li a {
 #about h2, #contact h2 {
     font-size: 36px;
     text-align: center;
-    color: #fffae6; /* Brighter text */
+    color: #fffae6;
     margin-bottom: 30px;
 }
 
 #about p, #contact p {
     font-size: 18px;
-    color: #fffae6; /* Brighter color */
+    color: #fffae6;
 }
 
 /* Contact Us Section */
 #contact {
     padding: 60px 20px;
-    background: #6f4f29; /* Dark Brown */
-    color: #fffae6; /* Brighter text */
+    background: #6f4f29;
+    color: #fffae6;
     text-align: center;
 }
 
 .contact-box {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    gap: 20px;
+    animation: slideIn 1s ease-out;
 }
 
 .contact-item {
-    background: #4e3629; /* Darker brown box */
-    color: #fffae6; /* Brighter text */
-    padding: 20px;
-    margin-bottom: 15px;
+    background: #4e3629;
+    color: #fffae6;
+    padding: 10px 20px;
     border-radius: 8px;
     display: flex;
     align-items: center;
-    width: 300px;
     justify-content: space-between;
+    width: auto;
 }
 
-.contact-info p {
+.contact-item p {
     margin-right: 10px;
 }
 
 .copy-btn {
-    background-color: #d18b6c; /* Light brown */
+    background-color: #d18b6c;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -169,5 +168,23 @@ nav ul li a {
 }
 
 .copy-btn:hover {
-    background-color: #a6754f; /* Darker brown on hover */
+    background-color: #a6754f;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .contact-box {
+        flex-direction: column;
+    }
 }
