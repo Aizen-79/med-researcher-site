@@ -106,24 +106,35 @@ nav ul li a {
 }
 
 /* About Us Section */
-#about, #contact {
+#about {
     padding: 60px 20px;
     background: #855c42;
     color: #fffae6;
     animation: fadeIn 1s ease-out;
     margin-top: 30px;
+    text-align: center;
 }
 
-#about h2, #contact h2 {
+#about h2 {
     font-size: 36px;
-    text-align: center;
     color: #fffae6;
     margin-bottom: 30px;
 }
 
-#about p, #contact p {
+.doctor-names {
+    font-size: 40px;
+    font-weight: bold;
+    color: #d18b6c;  /* Slightly brown color */
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;  /* Stylish, gives a more professional look */
+}
+
+#about p {
     font-size: 18px;
     color: #fffae6;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Contact Us Section */
