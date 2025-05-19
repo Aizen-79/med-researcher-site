@@ -9,7 +9,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #f7f7f7; /* Light background for contrast */
-    color: #555; /* Lighter color for text */
+    color: #333; /* Lighter text color for better readability */
     line-height: 1.6;
 }
 
@@ -18,7 +18,7 @@ body {
     background-color: #6f4f29; /* Dark brown */
     padding: 10px;
     text-align: center;
-    color: white;
+    color: #fffae6; /* Very light yellow for bright contrast */
     font-size: 16px;
 }
 
@@ -30,7 +30,7 @@ body {
 /* Header Styles */
 header {
     background: #6f4f29; /* Brown color */
-    color: white;
+    color: #fffae6; /* Bright, light yellow text */
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -44,7 +44,7 @@ header .logo h1 {
     letter-spacing: 2px;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    color: #fffae6; /* Bright color */
 }
 
 /* Navigation Styles */
@@ -61,7 +61,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #fffae6; /* Bright color */
     font-weight: 600;
     font-size: 18px;
 }
@@ -76,17 +76,17 @@ nav ul li a {
 #home h1 {
     font-size: 42px;
     margin-bottom: 20px;
-    color: #fff; /* Brighter color */
+    color: #fffae6; /* Brighter text */
 }
 
 #home p {
     font-size: 18px;
-    color: #fff; /* Brighter color */
+    color: #fffae6; /* Brighter color */
 }
 
 .cta-button {
     background-color: #d18b6c; /* Light Brown */
-    color: white;
+    color: #fff; /* Brighter color */
     padding: 15px 30px;
     text-decoration: none;
     font-weight: bold;
@@ -110,13 +110,13 @@ nav ul li a {
 #services h2 {
     font-size: 36px;
     text-align: center;
-    color: #fff;
+    color: #fffae6; /* Brighter text */
     margin-bottom: 30px;
 }
 
 .service-item {
     background: #4e3629; /* Brown color */
-    color: white;
+    color: #fffae6; /* Brighter text */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -126,12 +126,12 @@ nav ul li a {
 .service-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #fff; /* Bright text color */
+    color: #fffae6; /* Brighter text */
 }
 
 .service-price-button {
     background-color: #d18b6c; /* Light Brown */
-    color: white;
+    color: #fff; /* Brighter color */
     padding: 10px 15px;
     text-decoration: none;
     font-weight: bold;
@@ -166,25 +166,25 @@ nav ul li a {
 #about h2 {
     font-size: 36px;
     text-align: center;
-    color: #fff;
+    color: #fffae6; /* Brighter text */
     margin-bottom: 30px;
 }
 
 #about p {
     font-size: 18px;
-    color: #fff; /* Bright color */
+    color: #fffae6; /* Brighter text */
     text-align: center;
 }
 
 #about strong {
     font-size: 20px;
-    color: #fff; /* Bright color */
+    color: #fffae6; /* Brighter text */
 }
 
 /* Footer Styles */
 footer {
     background: #6f4f29;
-    color: white;
+    color: #fffae6; /* Brighter text */
     padding: 10px;
     text-align: center;
 }
