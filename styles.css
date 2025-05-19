@@ -96,4 +96,27 @@ nav ul li a {
 .service-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color:
+    color: #fffae6; /* Brighter text */
+}
+
+/* Service Price Styling */
+.service-price {
+    font-size: 18px;
+    color: #d18b6c; /* Slightly different color for price text */
+    margin-top: 10px;
+}
+
+/* About Us Section */
+#about {
+    padding: 60px 20px;
+    background: #855c42; /* Medium Brown */
+}
+
+#about h2 {
+    font-size: 36px;
+    text-align: center;
+    color: #fffae6; /* Brighter text */
+    margin-bottom: 30px;
+}
+
+/*
