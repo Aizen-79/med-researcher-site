@@ -8,30 +8,42 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    background: #f2f2f2;
     color: #333;
     line-height: 1.6;
 }
 
-h1, h2, h3 {
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-}
-
+/* Header Styles */
 header {
-    background: #ff9a8b;
+    background: #6f4f29; /* Brown color */
     color: white;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px; /* Adjust this size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between logo and text */
 }
 
 header .logo h1 {
     font-size: 36px;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
+/* Navigation Styles */
 nav ul {
     list-style: none;
     display: flex;
@@ -54,21 +66,20 @@ nav ul li a {
 #home {
     text-align: center;
     padding: 80px 20px;
+    background: #4e3629; /* Darker Brown */
 }
 
 #home h1 {
     font-size: 42px;
     margin-bottom: 20px;
-    animation: fadeIn 2s ease-out;
 }
 
 #home p {
     font-size: 18px;
-    animation: fadeIn 2s ease-out 0.5s;
 }
 
 .cta-button {
-    background-color: #ff9a8b;
+    background-color: #d18b6c; /* Light Brown */
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -78,22 +89,99 @@ nav ul li a {
     display: inline-block;
     font-size: 18px;
     transition: 0.3s;
-    animation: fadeIn 2s ease-out 1s;
 }
 
 .cta-button:hover {
-    background-color: #f6b7b3;
+    background-color: #a6754f; /* Hover color */
 }
 
 /* Services Section */
 #services {
     padding: 60px 20px;
-    background-color: #fff;
+    background: #855c42; /* Medium Brown */
 }
 
 #services h2 {
     font-size: 36px;
-    text
-html {
-    scroll-behavior: smooth;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.service-item {
+    background: #4e3629; /* Brown color */
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-price-button {
+    background-color: #d18b6c; /* Light Brown */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.service-price-button:hover {
+    background-color: #a6754f; /* Hover color */
+}
+
+/* Price Details Section */
+#prices {
+    padding: 60px 20px;
+    background: #6f4f29; /* Brown color */
+}
+
+#prices h2 {
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.price-item {
+    background: #4e3629; /* Brown color */
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us Section */
+#about {
+    padding: 60px 20px;
+    background: #855c42; /* Medium Brown */
+}
+
+#about h2 {
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#about p {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background: #6f4f29;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
