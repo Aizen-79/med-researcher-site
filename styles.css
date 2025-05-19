@@ -106,6 +106,7 @@ nav ul li a {
     color: #fffae6; /* Brighter text */
 }
 
+/* Added more margin-bottom to the service text and increased space for price button */
 .service-price-button {
     background-color: #d18b6c; /* Light Brown */
     color: #fff; /* Brighter color */
@@ -113,12 +114,13 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 20px; /* Increased space between text and button */
     transition: 0.3s;
 }
 
+/* Hover effect for service price button */
 .service-price-button:hover {
-    background-color: #a6754f; /* Hover color */
+    background-color: #a6754f; /* Darker brown */
 }
 
 /* Price Details Section */
