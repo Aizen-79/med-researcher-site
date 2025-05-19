@@ -127,4 +127,47 @@ nav ul li a {
     color: #fffae6; /* Brighter color */
 }
 
-/* Contact
+/* Contact Us Section */
+#contact {
+    padding: 60px 20px;
+    background: #6f4f29; /* Dark Brown */
+    color: #fffae6; /* Brighter text */
+    text-align: center;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item {
+    background: #4e3629; /* Darker brown box */
+    color: #fffae6; /* Brighter text */
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.contact-info p {
+    margin-right: 10px;
+}
+
+.copy-btn {
+    background-color: #d18b6c; /* Light brown */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.copy-btn:hover {
+    background-color: #a6754f; /* Darker brown on hover */
+}
