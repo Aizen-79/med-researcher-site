@@ -86,3 +86,18 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function copyToClipboard(number) {
+            const el = document.createElement('textarea');
+            el.value = number;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            alert('Copied: ' + number);
+        }
+    </script>
+
+</body>
+</html>
