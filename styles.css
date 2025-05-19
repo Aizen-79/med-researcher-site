@@ -176,10 +176,16 @@ nav ul li a {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* About Us Section - Bold Name Styling */
+#about p strong {
+    color: #d18b6c; /* Slightly different color for the names */
 }
 
 /* Responsive */
