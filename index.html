@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedTyper - Dental Services</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MedTyper - Dental Research Services</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* Global Styles */
         body {
@@ -184,10 +186,16 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             100% {
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+
+        /* About Us Section - Bold Name Styling */
+        #about p strong {
+            color: #d18b6c; /* Slightly different color for the names */
         }
 
         /* Responsive */
@@ -198,98 +206,90 @@
         }
     </style>
 </head>
-<body>
 
-    <!-- Header Section -->
+<body>
     <header>
-        <div class="container">
-            <h1>MedTyper</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>MedTyper</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Home Section -->
     <section id="home">
         <h1>Welcome to MedTyper</h1>
-        <p>We provide high-quality research, thesis writing, and presentations for dental professionals and students.</p>
+        <p>Your trusted partner for dental research, thesis, and academic support.</p>
         <a href="#services" class="cta-button">Our Services</a>
     </section>
 
     <!-- Services Section -->
     <section id="services">
         <h2>Our Services</h2>
+
         <div class="service-item">
             <h3>Thesis Protocols and Researches</h3>
-            <p>We provide high-quality and scientifically rigorous research protocols tailored to meet your specific needs. Whether you're working on a clinical trial, experimental research, or literature review, we can help you design a structured and comprehensive research framework.</p>
-            <p class="service-price">Service Price: 9,000 L.E</p>
+            <p>We provide high-quality and scientifically rigorous research protocols tailored to meet your specific needs.</p>
+            <button class="service-price">Service Price: 9,000 L.E</button>
         </div>
+
         <div class="service-item">
             <h3>Master’s and PhD Thesis</h3>
-            <p>We provide comprehensive support for Master's thesis projects in the field of dentistry. From the initial stages of topic selection to the final submission, we ensure that your thesis adheres to academic standards and demonstrates in-depth understanding.</p>
-            <p class="service-price">Service Price: 25,000 - 30,000 L.E</p>
+            <p>We offer comprehensive support for Master’s and PhD thesis projects, ensuring academic excellence in dentistry.</p>
+            <button class="service-price">Service Price: 25,000 - 30,000 L.E</button>
         </div>
+
         <div class="service-item">
             <h3>Dental Assignments</h3>
-            <p>We offer a range of services for dental students or professionals who need help with assignments in the field of dentistry. Whether it's a clinical case study, a research paper, or a theoretical analysis, we provide expert guidance and writing.</p>
-            <p class="service-price">Service Price: 1,000 - 3,000 L.E</p>
+            <p>Providing expert help for dental assignments including clinical case studies, research papers, essays, and more.</p>
+            <button class="service-price">Service Price: 1,000 - 3,000 L.E</button>
         </div>
+
         <div class="service-item">
             <h3>PowerPoint and Poster Presentations</h3>
-            <p>We provide full PowerPoint or poster presentation services for any academic or professional setting, helping you communicate your research or case studies effectively.</p>
-            <p class="service-price">Service Price: 800 L.E</p>
+            <p>We craft professional PowerPoint presentations and posters for your dental research and academic needs.</p>
+            <button class="service-price">Service Price: 800 L.E</button>
         </div>
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="animated-section">
+    <section id="about">
         <h2>About Us</h2>
-        <p>Dr. Ahmed and Dr. Doha
-            We are a dedicated team of dental professionals, committed to providing top-quality research, thesis support, and presentations for dental professionals and students. Our experience and expertise in the field of dentistry enable us to assist you in achieving academic and professional excellence.</p>
+        <p><strong>Dr. Ahmed & Dr. Doha</strong> are a dedicated team of dental professionals, committed to providing top-quality research, thesis support, and presentations for dental professionals and students. Our experience and expertise in the field of dentistry enable us to assist you in achieving academic and professional excellence.</p>
     </section>
 
     <!-- Contact Us Section -->
-    <section id="contact" class="animated-section">
+    <section id="contact">
         <h2>Contact Us</h2>
         <div class="contact-box">
             <div class="contact-item">
-                <div class="contact-info">
-                    <p>+20 101 899 8289</p>
-                    <button class="copy-btn" onclick="copyToClipboard('+20 101 899 8289')">Copy</button>
-                </div>
+                <p>+20 101 899 8289</p>
+                <button class="copy-btn" onclick="copyToClipboard('+20 101 899 8289')">Copy</button>
             </div>
             <div class="contact-item">
-                <div class="contact-info">
-                    <p>+20 106 315 2783</p>
-                    <button class="copy-btn" onclick="copyToClipboard('+20 106 315 2783')">Copy</button>
-                </div>
+                <p>+20 106 315 2783</p>
+                <button class="copy-btn" onclick="copyToClipboard('+20 106 315 2783')">Copy</button>
             </div>
             <div class="contact-item">
-                <div class="contact-info">
-                    <p>+20 112 031 1258</p>
-                    <button class="copy-btn" onclick="copyToClipboard('+20 112 031 1258')">Copy</button>
-                </div>
+                <p>+20 112 031 1258</p>
+                <button class="copy-btn" onclick="copyToClipboard('+20 112 031 1258')">Copy</button>
             </div>
         </div>
     </section>
 
     <script>
-        function copyToClipboard(number) {
-            const el = document.createElement('textarea');
-            el.value = number;
-            document.body.appendChild(el);
-            el.select();
-            document.execCommand('copy');
-            document.body.removeChild(el);
-            alert('Copied: ' + number);
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Phone number copied to clipboard!');
+            }, function() {
+                alert('Failed to copy phone number.');
+            });
         }
     </script>
-
 </body>
+
 </html>
