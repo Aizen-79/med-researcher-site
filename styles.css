@@ -95,14 +95,14 @@ nav ul li a {
     background: #4e3629; /* Brown color */
     color: #fffae6; /* Brighter text */
     padding: 20px;
-    margin-bottom: 30px; /* Increased margin for more spacing */
+    margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .service-item h3 {
     font-size: 24px;
-    margin-bottom: 20px; /* Increased margin for more spacing */
+    margin-bottom: 10px;
     color: #fffae6; /* Brighter text */
 }
 
@@ -113,8 +113,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    margin-top: 20px; /* Increased margin for more spacing */
-    display: inline-block;
+    margin-top: 10px;
     transition: 0.3s;
 }
 
@@ -124,7 +123,7 @@ nav ul li a {
 
 /* Price Details Section */
 .service-price-info {
-    margin-top: 20px; /* Increased margin for more spacing */
+    margin-top: 15px;
     background-color: #d18b6c;
     padding: 10px;
     border-radius: 5px;
@@ -148,5 +147,52 @@ nav ul li a {
     margin-bottom: 30px;
 }
 
-#about p {
-    font-size: 18
+/* Contact Us Section */
+#contact {
+    padding: 60px 20px;
+    background: #d18b6c; /* Light Brown background */
+    text-align: center; /* Center the contact section */
+}
+
+#contact h2 {
+    font-size: 36px;
+    color: #fffae6; /* Brighter text */
+    margin-bottom: 30px;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-item {
+    background-color: #4e3629; /* Darker brown for contact items */
+    color: #fffae6;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    max-width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Added some spacing between contact items */
+}
+
+.copy-btn {
+    background-color: #fffae6; /* Light text button for copy */
+    color: #4e3629; /* Dark text */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.copy-btn:hover {
+    background-color: #a6754f; /* Darker hover color for button */
+}
