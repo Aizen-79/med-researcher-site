@@ -7,17 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Contact Section at the Top -->
-    <section id="contact-top" class="contact-top">
+    <!-- Removed the Contact Section at the Top -->
+    <!-- <section id="contact-top" class="contact-top">
         <div class="contact-info">
             <p>+20 101 899 8289 | +20 106 315 2783 | +20 112 031 1258</p>
         </div>
-    </section>
+    </section> -->
 
     <header>
-        <div class="logo">
-            <h1>MedTyper</h1>
-        </div>
+        <!-- Removed the logo -->
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -79,8 +77,39 @@
         <p><strong>Dr. Ahmed & Dr. Doha</strong></p>
     </section>
 
+    <!-- New Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-box">
+            <div class="contact-item">
+                <p>+20 101 899 8289</p>
+                <button class="copy-btn" onclick="copyToClipboard('+20 101 899 8289')">📋 Copy</button>
+            </div>
+            <div class="contact-item">
+                <p>+20 106 315 2783</p>
+                <button class="copy-btn" onclick="copyToClipboard('+20 106 315 2783')">📋 Copy</button>
+            </div>
+            <div class="contact-item">
+                <p>+20 112 031 1258</p>
+                <button class="copy-btn" onclick="copyToClipboard('+20 112 031 1258')">📋 Copy</button>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2025 MedTyper. All rights reserved.</p>
     </footer>
+
+    <script>
+        function copyToClipboard(phoneNumber) {
+            const textArea = document.createElement("textarea");
+            textArea.value = phoneNumber;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Copied to clipboard: " + phoneNumber);
+        }
+    </script>
 </body>
 </html>
