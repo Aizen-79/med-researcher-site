@@ -54,6 +54,10 @@ header {
 }
 
 /* Navigation */
+nav {
+    /* default full width, centered */
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -170,12 +174,13 @@ nav ul li a:focus {
     margin-bottom: 20px;
 }
 
+/* Edited doctor names style */
 .doctor-names {
-    font-size: 16px;           /* smaller than About Us */
+    font-size: 18px; /* smaller than About Us */
     font-weight: 600;
-    color: #a57c48;            /* slightly darker than before */
-    letter-spacing: 1px;       /* reduced spacing */
-    margin-bottom: 10px;       /* decreased margin */
+    color: #a97f43; /* slightly darker gold */
+    letter-spacing: 1.2px; /* slightly decreased spacing */
+    margin-bottom: 10px; /* decreased spacing below */
     text-transform: uppercase;
 }
 
@@ -272,11 +277,19 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    nav {
+        max-width: calc(100% - 110px); /* leave space for flags */
+        margin: 0 auto 0 0; /* align left with space on right */
+        display: flex;
+        justify-content: flex-start;
+    }
+
     nav ul {
-        flex-direction: row; /* keep horizontal on mobile */
+        flex-direction: row;
         gap: 10px;
         margin: 0;
-        padding-right: 80px; /* prevent overlap with flags */
+        padding: 0;
+        width: 100%;
     }
 
     nav ul li {
@@ -306,6 +319,24 @@ footer {
     }
 
     .doctor-names {
-        font-size: 16px;
+        font-size: 18px;
     }
+}
+
+/* Language switcher flags */
+.language-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+    display: flex;
+    gap: 8px;
+}
+
+.language-switcher img {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
