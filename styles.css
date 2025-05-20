@@ -6,6 +6,11 @@ body {
     line-height: 1.6;
 }
 
+html[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
 /* Header Section */
 header {
     background: #6f4f29;
@@ -134,7 +139,7 @@ nav ul li a {
     font-size: 28px;  /* Smaller than About Us title */
     font-weight: bold;
     color: #d18b6c;  /* Slightly brown color */
-    letter-spacing: 0;  /* Reduced letter spacing to remove extra space */
+    letter-spacing: 2px;
     margin-bottom: 20px;
     text-transform: uppercase;  /* Stylish, gives a more professional look */
 }
@@ -156,7 +161,7 @@ nav ul li a {
 
 .contact-box {
     display: flex;
-    flex-direction: column; /* Changed to vertical layout */
+    justify-content: center;
     align-items: center;
     gap: 20px;
     animation: slideIn 1s ease-out;
@@ -180,10 +185,11 @@ nav ul li a {
 .copy-btn {
     background-color: #d18b6c;
     color: white;
-    padding: 5px 15px;
     border: none;
-    border-radius: 5px;
+    padding: 5px 10px;
     cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
 }
 
 .copy-btn:hover {
