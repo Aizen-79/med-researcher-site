@@ -66,40 +66,12 @@
                 <button class="copy-btn" onclick="copyPhoneNumber('+20 101 899 8289')">Copy</button>
             </div>
             <div class="contact-item">
-                <p>+20 106 315 2783</p>
-                <button class="copy-btn" onclick="copyPhoneNumber('+20 106 315 2783')">Copy</button>
-            </div>
-            <div class="contact-item">
-                <p>+20 112 031 1258</p>
-                <button class="copy-btn" onclick="copyPhoneNumber('+20 112 031 1258')">Copy</button>
+                <p>+20 106 698 2525</p>
+                <button class="copy-btn" onclick="copyPhoneNumber('+20 106 698 2525')">Copy</button>
             </div>
         </div>
     </section>
 
-    <script>
-        function copyPhoneNumber(phoneNumber) {
-            navigator.clipboard.writeText(phoneNumber).then(() => {
-                alert("Phone number copied to clipboard!");
-            });
-        }
-
-        function toggleLanguage() {
-            var elements = document.querySelectorAll('[data-en]');
-            elements.forEach(function (element) {
-                var lang = document.documentElement.lang;
-                if (lang === 'en') {
-                    element.textContent = element.getAttribute('data-ar');
-                } else {
-                    element.textContent = element.getAttribute('data-en');
-                }
-            });
-            // Toggle language attribute
-            if (document.documentElement.lang === 'en') {
-                document.documentElement.lang = 'ar';
-            } else {
-                document.documentElement.lang = 'en';
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
