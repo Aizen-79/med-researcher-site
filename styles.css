@@ -118,16 +118,16 @@ nav ul li a {
 #about h2 {
     font-size: 36px;
     color: #fffae6;
-    margin-bottom: 10px;  /* Decreased margin between About Us title and the doctor names */
+    margin-bottom: 10px;
 }
 
 .doctor-names {
     font-size: 24px;  /* Smaller than About Us title */
     font-weight: bold;
     color: #d18b6c;
-    letter-spacing: 1px;  /* Decreased letter-spacing to reduce spacing between words */
-    margin-top: 10px;  /* Added small margin on top to space it out a bit from the previous paragraph */
-    margin-bottom: 10px;  /* Reduced margin to decrease spacing */
+    letter-spacing: 1px;  /* Decreased letter-spacing */
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
 
@@ -171,48 +171,13 @@ nav ul li a {
 
 .copy-btn {
     background-color: #d18b6c;
-    color: white;
+    color: #fff;
     border: none;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
+    padding: 5px 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 5px;
 }
 
 .copy-btn:hover {
     background-color: #a6754f;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@keyframes slideIn {
-    0% { transform: translateY(30px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .contact-box {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .cta-button {
-        padding: 12px 24px;
-        font-size: 16px;
-    }
 }
