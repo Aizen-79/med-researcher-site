@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html-element">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +18,11 @@
         </nav>
     </header>
 
-    <!-- Google Translate Button (Positioned at the top right) -->
-    <div id="google_translate_element" style="position: fixed; top: 20px; right: 20px; z-index: 1000;"></div>
+    <!-- Language Selection Icons (UK Flag for English, Saudi Arabia Flag for Arabic) -->
+    <div id="language-selector">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_Kingdom.svg/1920px-Flag_of_the_United_Kingdom.svg.png" alt="English" class="flag-icon" id="english" onclick="setLanguage('en')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/1920px-Flag_of_Saudi_Arabia.svg.png" alt="Arabic" class="flag-icon" id="arabic" onclick="setLanguage('ar')">
+    </div>
 
     <section id="home">
         <h1>MedTyper</h1>
@@ -77,19 +80,21 @@
         </div>
     </section>
 
-    <!-- Google Translate Script -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en', // Default language is English
-                includedLanguages: 'en,ar', // Include Arabic for translation
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
     <script>
+        function setLanguage(language) {
+            const htmlElement = document.getElementById('html-element');
+
+            if (language === 'en') {
+                htmlElement.lang = 'en';
+                htmlElement.setAttribute('dir', 'ltr');
+            } else if (language === 'ar') {
+                htmlElement.lang = 'ar';
+                htmlElement.setAttribute('dir', 'rtl');
+            }
+
+            window.location.reload();
+        }
+
         function copyPhoneNumber(phoneNumber) {
             navigator.clipboard.writeText(phoneNumber).then(() => {
                 alert("Phone number copied to clipboard!");
