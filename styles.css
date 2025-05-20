@@ -37,19 +37,20 @@ header {
 
 /* Language Switcher */
 .language-switcher {
-    position: absolute;
+    position: fixed;
     top: 10px;
-    right: 20px;
+    right: 10px;
+    z-index: 1001;
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
 .language-switcher img {
-    width: 24px;
-    height: 16px;
+    width: 30px;
+    height: 20px;
     cursor: pointer;
-    border: 1px solid #fff;
-    border-radius: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 /* Navigation */
@@ -272,13 +273,17 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        flex-direction: row; /* keep horizontal on mobile */
         gap: 10px;
+        justify-content: flex-start;
+        padding-right: 60px; /* space so nav doesn't overlap flags */
+        overflow-x: auto; /* allow horizontal scroll if needed */
+        -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
         margin: 0;
     }
 
     nav ul li {
-        margin: 0;
+        margin: 0 8px;
     }
 
     .contact-box {
@@ -306,21 +311,4 @@ footer {
     .doctor-names {
         font-size: 18px;
     }
-}
-/* Language switcher flags */
-.language-switcher {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1001;
-    display: flex;
-    gap: 8px;
-}
-
-.language-switcher img {
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
