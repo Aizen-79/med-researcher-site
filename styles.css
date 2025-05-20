@@ -340,3 +340,12 @@ footer {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+/* Keep phone numbers in LTR regardless of page direction */
+#contact .contact-box,
+#contact .contact-item p,
+#contact .copy-btn {
+    direction: ltr;
+    unicode-bidi: embed;
+    text-align: left;
+}
