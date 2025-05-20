@@ -1,34 +1,24 @@
-/* Google Font */
+/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+/* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
     background: #f7f7f7;
     color: #333;
     line-height: 1.6;
     margin: 0;
-    padding: 60px 0 0;
+    padding: 0;
+    padding-top: 60px; /* for fixed header */
 }
 
-/* Language Switcher */
-.language-switcher {
-    position: fixed;
-    top: 10px;
-    right: 15px;
-    z-index: 1100;
-    display: flex;
-    gap: 10px;
+/* RTL Support */
+html[dir="rtl"] body {
+    direction: rtl;
+    text-align: right;
 }
 
-.language-switcher img {
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-/* Header */
+/* Header Section */
 header {
     background: #6f4f29;
     color: #fffae6;
@@ -40,8 +30,29 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Language Switcher */
+.language-switcher {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.language-switcher img {
+    width: 24px;
+    height: 16px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -67,19 +78,24 @@ nav ul li a:focus {
     color: #d18b6c;
 }
 
-/* Section Styling */
-section {
-    padding: 60px 20px;
-}
-
+/* Home Section */
 #home {
     text-align: center;
+    padding: 80px 20px;
     background: #4e3629;
-    color: #fffae6;
 }
 
 #home h1 {
     font-size: 42px;
+    margin-bottom: 20px;
+    color: #fffae6;
+}
+
+#home p {
+    font-size: 18px;
+    color: #fffae6;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .cta-button {
@@ -95,14 +111,22 @@ section {
     transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
+.cta-button:hover,
+.cta-button:focus {
     background-color: #a6754f;
 }
 
-/* Services */
+/* Services Section */
 #services {
+    padding: 60px 20px;
     background: #855c42;
+}
+
+#services h2 {
+    font-size: 36px;
+    text-align: center;
     color: #fffae6;
+    margin-bottom: 30px;
 }
 
 .service-item {
@@ -119,6 +143,8 @@ section {
 
 .service-item h3 {
     font-size: 24px;
+    margin-bottom: 10px;
+    color: #fffae6;
 }
 
 .service-price {
@@ -127,11 +153,20 @@ section {
     margin-top: 10px;
 }
 
-/* About Us */
+/* About Us Section */
 #about {
+    padding: 60px 20px;
     background: #855c42;
     color: #fffae6;
+    animation: fadeIn 1s ease-out;
+    margin-top: 30px;
     text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    color: #fffae6;
+    margin-bottom: 20px;
 }
 
 .doctor-names {
@@ -143,8 +178,16 @@ section {
     text-transform: uppercase;
 }
 
-/* Contact */
+#about p {
+    font-size: 18px;
+    color: #fffae6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
 #contact {
+    padding: 60px 20px;
     background: #6f4f29;
     color: #fffae6;
     text-align: center;
@@ -153,18 +196,29 @@ section {
 .contact-box {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
+    animation: slideIn 1s ease-out;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .contact-item {
     background: #4e3629;
+    color: #fffae6;
     padding: 10px 20px;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 260px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 18px;
 }
 
 .copy-btn {
@@ -176,16 +230,80 @@ section {
     cursor: pointer;
     font-weight: 600;
     transition: background-color 0.3s ease;
+    font-size: 16px;
 }
 
-.copy-btn:hover {
+.copy-btn:hover,
+.copy-btn:focus {
     background-color: #a6754f;
 }
 
 /* Footer */
 footer {
-    background-color: #4e3629;
+    background: #4e3629;
     color: #fffae6;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .service-item {
+        margin-bottom: 25px;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    #services h2,
+    #about h2 {
+        font-size: 28px;
+    }
+
+    .service-item h3 {
+        font-size: 20px;
+    }
+
+    .doctor-names {
+        font-size: 18px;
+    }
 }
