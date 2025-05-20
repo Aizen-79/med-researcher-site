@@ -1,3 +1,6 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
@@ -6,7 +9,6 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 /* Header Section */
@@ -16,14 +18,19 @@ header {
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin: 10px 0 0;
+    margin: 10px 0 0 0;
     padding: 0;
 }
 
@@ -39,7 +46,8 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a:focus {
     color: #d18b6c;
 }
 
@@ -48,7 +56,6 @@ nav ul li a:hover {
     text-align: center;
     padding: 80px 20px;
     background: #4e3629;
-    animation: fadeIn 1s ease-out;
 }
 
 #home h1 {
@@ -60,6 +67,8 @@ nav ul li a:hover {
 #home p {
     font-size: 18px;
     color: #fffae6;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .cta-button {
@@ -75,7 +84,8 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
+.cta-button:hover,
+.cta-button:focus {
     background-color: #a6754f;
 }
 
@@ -99,12 +109,15 @@ nav ul li a:hover {
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease-out;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .service-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #fffae6;
 }
 
 .service-price {
@@ -118,13 +131,14 @@ nav ul li a:hover {
     padding: 60px 20px;
     background: #855c42;
     color: #fffae6;
-    text-align: center;
     animation: fadeIn 1s ease-out;
     margin-top: 30px;
+    text-align: center;
 }
 
 #about h2 {
     font-size: 36px;
+    color: #fffae6;
     margin-bottom: 30px;
 }
 
@@ -139,6 +153,7 @@ nav ul li a:hover {
 
 #about p {
     font-size: 18px;
+    color: #fffae6;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -151,18 +166,15 @@ nav ul li a:hover {
     text-align: center;
 }
 
-#contact h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
 .contact-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 20px;
     animation: slideIn 1s ease-out;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .contact-item {
@@ -173,91 +185,37 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 240px;
+    width: 260px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
 .contact-item p {
-    margin-right: 10px;
+    margin: 0;
+    font-size: 18px;
 }
 
 .copy-btn {
     background-color: #d18b6c;
-    border: none;
     color: #fff;
-    padding: 8px 12px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.copy-btn:hover {
-    background-color: #a6754f;
-}
-
-/* Contact Form */
-.contact-form {
-    background-color: #4e3629;
-    padding: 20px;
-    margin-top: 40px;
-    border-radius: 10px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    animation: fadeIn 1.2s ease-out;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
     border: none;
+    padding: 8px 15px;
     border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
     font-size: 16px;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: #999;
-}
-
-.contact-form textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-.contact-form button {
-    background-color: #d18b6c;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
+.copy-btn:hover,
+.copy-btn:focus {
     background-color: #a6754f;
-}
-
-/* Footer */
-footer {
-    background: #4e3629;
-    color: #fffae6;
-    text-align: center;
-    padding: 20px 10px;
-    font-size: 14px;
-    margin-top: 40px;
 }
 
 /* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
@@ -268,7 +226,7 @@ footer {
 @keyframes slideIn {
     from {
         opacity: 0;
-        transform: translateX(-40px);
+        transform: translateX(-20px);
     }
     to {
         opacity: 1;
@@ -280,6 +238,8 @@ footer {
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
+        gap: 15px;
+        margin: 10px 0 0 0;
     }
 
     .contact-box {
@@ -287,9 +247,8 @@ footer {
         gap: 15px;
     }
 
-    .cta-button {
-        padding: 12px 24px;
-        font-size: 16px;
+    .service-item {
+        margin-bottom: 25px;
     }
 
     #home h1 {
@@ -297,8 +256,15 @@ footer {
     }
 
     #services h2,
-    #about h2,
-    #contact h2 {
+    #about h2 {
         font-size: 28px;
+    }
+
+    .service-item h3 {
+        font-size: 20px;
+    }
+
+    .doctor-names {
+        font-size: 22px;
     }
 }
