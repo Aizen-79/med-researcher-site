@@ -1,133 +1,85 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>MedTyper - Dental Research and Thesis Services</title>
-<link href="styles.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MedTyper - Dental Research and Thesis Services</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
-<body lang="en" dir="ltr">
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Language Switcher Icon -->
-<div class="lang-switcher" title="Switch Language" aria-label="Switch Language" role="button" tabindex="0" onclick="toggleLanguage()" onkeypress="if(event.key==='Enter') toggleLanguage()">
-  <img src="https://cdn-icons-png.flaticon.com/512/555/555487.png" alt="Switch Language Icon" />
-</div>
+    <section id="home">
+        <h1>MedTyper</h1>
+        <p>Your trusted partner for dental research, thesis support, and presentations.</p>
+        <a href="#services" class="cta-button">Explore Our Services</a>
+    </section>
 
-<header>
-  <nav>
-    <ul>
-      <li><a href="#home"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
-      <li><a href="#services"><span class="lang-en">Services</span><span class="lang-ar">خدماتنا</span></a></li>
-      <li><a href="#about"><span class="lang-en">About Us</span><span class="lang-ar">من نحن</span></a></li>
-      <li><a href="#contact"><span class="lang-en">Contact Us</span><span class="lang-ar">اتصل بنا</span></a></li>
-    </ul>
-  </nav>
-</header>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Thesis Protocols and Researches</h3>
+            <p>We provide highly-precise and scientifically rigorous research protocols tailored to meet your specific needs. Whether you're working on a clinical trial, experimental research, or literature review, we can help you design a structured and comprehensive research framework.</p>
+            <p class="service-price">Service Price: 9,000 L.E</p>
+        </div>
+        <div class="service-item">
+            <h3>Master’s and PhD Thesis</h3>
+            <p>We provide comprehensive support for Master's thesis projects in the field of dentistry. From the initial stages of topic selection to the final submission, we ensure that your thesis adheres to academic standards and demonstrates in-depth understanding. We also complete PhD thesis projects, providing the guidance and expertise necessary to ensure your research stands out in the academic community.</p>
+            <p class="service-price">Service Price: 25,000 - 30,000 L.E</p>
+        </div>
+        <div class="service-item">
+            <h3>Dental Assignments</h3>
+            <p>We offer a range of services for dental students or professionals who need help with assignments in the field of dentistry. Whether it's a clinical case study, a research paper, or a theoretical analysis, we can provide expert guidance and writing, including: PIP, GDP, Essay Writing, Case Studies, Research Papers, and Critical Analysis.</p>
+            <p class="service-price">Service Price: 1,000 - 3,000 L.E</p>
+        </div>
+        <div class="service-item">
+            <h3>PowerPoint and Poster Presentations</h3>
+            <p>Presenting your dental research, thesis, or clinical case study through a well-crafted PowerPoint presentation is critical for effective communication. We provide full PowerPoint or poster presentation services for any academic or professional setting.</p>
+            <p class="service-price">Service Price: 800 L.E</p>
+        </div>
+    </section>
 
-<section id="home">
-  <h1><span class="lang-en">MedTyper</span><span class="lang-ar">ميدتايبر</span></h1>
-  <p>
-    <span class="lang-en">Your trusted partner for dental research, thesis support, and presentations.</span>
-    <span class="lang-ar">شريكك الموثوق للبحث العلمي في طب الأسنان، دعم الرسائل العلمية، والعروض التقديمية.</span>
-  </p>
-  <a href="#services" class="cta-button">
-    <span class="lang-en">Explore Our Services</span>
-    <span class="lang-ar">اكتشف خدماتنا</span>
-  </a>
-</section>
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-text">
+            <h2 class="doctor-names">Dr. Ahmed & Dr. Doha</h2>
+            <p>We are a dedicated team of dental professionals, committed to providing top-quality research, thesis support, and presentations for dental professionals and students. Our experience and expertise in the field of dentistry enable us to assist you in achieving academic and professional excellence.</p>
+        </div>
+    </section>
 
-<section id="services">
-  <h2>
-    <span class="lang-en">Our Services</span>
-    <span class="lang-ar">خدماتنا</span>
-  </h2>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-box">
+            <div class="contact-item">
+                <p>+20 101 899 8289</p>
+                <button class="copy-btn" onclick="copyPhoneNumber('+20 101 899 8289')">Copy</button>
+            </div>
+            <div class="contact-item">
+                <p>+20 106 315 2783</p>
+                <button class="copy-btn" onclick="copyPhoneNumber('+20 106 315 2783')">Copy</button>
+            </div>
+            <div class="contact-item">
+                <p>+20 112 031 1258</p>
+                <button class="copy-btn" onclick="copyPhoneNumber('+20 112 031 1258')">Copy</button>
+            </div>
+        </div>
+    </section>
 
-  <div class="service-item">
-    <h3><span class="lang-en">Thesis Protocols and Researches</span><span class="lang-ar">بروتوكولات وأبحاث الرسائل العلمية</span></h3>
-    <p>
-      <span class="lang-en">We provide highly-precise and scientifically rigorous research protocols tailored to meet your specific needs.</span>
-      <span class="lang-ar">نقدم بروتوكولات بحث دقيقة وعلمية مصممة خصيصًا لتلبية احتياجاتك.</span>
-    </p>
-    <p class="service-price">
-      <span class="lang-en">Service Price: 9,000 L.E</span>
-      <span class="lang-ar">سعر الخدمة: 9,000 جنيه مصري</span>
-    </p>
-  </div>
-
-  <div class="service-item">
-    <h3><span class="lang-en">Master’s and PhD Thesis</span><span class="lang-ar">رسائل ماجستير ودكتوراه</span></h3>
-    <p>
-      <span class="lang-en">We provide comprehensive support for Master's and PhD thesis projects in dentistry, from topic selection to final submission.</span>
-      <span class="lang-ar">ندعم مشاريع رسائل الماجستير والدكتوراه في طب الأسنان من اختيار الموضوع حتى التسليم النهائي.</span>
-    </p>
-    <p class="service-price">
-      <span class="lang-en">Service Price: 25,000 - 30,000 L.E</span>
-      <span class="lang-ar">سعر الخدمة: 25,000 - 30,000 جنيه مصري</span>
-    </p>
-  </div>
-
-  <div class="service-item">
-    <h3><span class="lang-en">Dental Assignments</span><span class="lang-ar">مهام وواجبات طب الأسنان</span></h3>
-    <p>
-      <span class="lang-en">We help with case studies, research papers, essays, and more for dental students and professionals.</span>
-      <span class="lang-ar">نساعد في دراسات الحالة، الأوراق البحثية، المقالات، وأكثر لطلاب وأخصائيي طب الأسنان.</span>
-    </p>
-    <p class="service-price">
-      <span class="lang-en">Service Price: 1,000 - 3,000 L.E</span>
-      <span class="lang-ar">سعر الخدمة: 1,000 - 3,000 جنيه مصري</span>
-    </p>
-  </div>
-
-  <div class="service-item">
-    <h3><span class="lang-en">PowerPoint and Poster Presentations</span><span class="lang-ar">عروض بوربوينت وبوسترات تقديمية</span></h3>
-    <p>
-      <span class="lang-en">We design impactful presentations for research, thesis defense, or professional settings.</span>
-      <span class="lang-ar">نصمم عروض تقديمية مؤثرة للبحوث، الدفاع عن الرسائل، أو الاجتماعات المهنية.</span>
-    </p>
-    <p class="service-price">
-      <span class="lang-en">Service Price: 800 L.E</span>
-      <span class="lang-ar">سعر الخدمة: 800 جنيه مصري</span>
-    </p>
-  </div>
-</section>
-
-<section id="about">
-  <h2><span class="lang-en">About Us</span><span class="lang-ar">من نحن</span></h2>
-  <div class="about-text">
-    <h3 class="doctor-names">
-      <span class="lang-en">Dr. Ahmed & Dr. Doha</span>
-      <span class="lang-ar">د. أحمد & د. ضحى</span>
-    </h3>
-    <p>
-      <span class="lang-en">We are a dedicated team specializing in dental research and academic support, committed to helping you succeed.</span>
-      <span class="lang-ar">نحن فريق متخصص في البحث العلمي ودعم الطلاب في طب الأسنان، ملتزمون بمساعدتك على النجاح.</span>
-    </p>
-  </div>
-</section>
-
-<section id="contact">
-  <h2><span class="lang-en">Contact Us</span><span class="lang-ar">اتصل بنا</span></h2>
-  <div class="contact-box">
-    <div class="contact-item">
-      <p><span class="lang-en">Email: info@medtyper.com</span><span class="lang-ar">البريد الإلكتروني: info@medtyper.com</span></p>
-    </div>
-    <div class="contact-item">
-      <p><span class="lang-en">Phone: +20 123 456 7890</span><span class="lang-ar">الهاتف: +20 123 456 7890</span></p>
-    </div>
-  </div>
-</section>
-
-<script>
-  function toggleLanguage() {
-    const body = document.body;
-    if (body.lang === 'en') {
-      body.lang = 'ar';
-      body.dir = 'rtl';
-    } else {
-      body.lang = 'en';
-      body.dir = 'ltr';
-    }
-  }
-</script>
+    <script>
+        function copyPhoneNumber(phoneNumber) {
+            navigator.clipboard.writeText(phoneNumber).then(() => {
+                alert("Phone number copied to clipboard!");
+            });
+        }
+    </script>
 </body>
 </html>
