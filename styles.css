@@ -1,5 +1,7 @@
+/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+/* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
     background: #f7f7f7;
@@ -7,19 +9,21 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    padding-top: 60px;
+    padding-top: 60px; /* for fixed header */
 }
 
+/* RTL Support */
 html[dir="rtl"] body {
     direction: rtl;
     text-align: right;
 }
 
-/* Header */
+/* Header Section */
 header {
     background: #6f4f29;
     color: #fffae6;
     padding: 15px 20px;
+    text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
@@ -29,24 +33,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* Language Switcher */
-.language-switcher {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1001;
-    display: flex;
-    gap: 8px;
-}
-
-.language-switcher img {
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    flex-direction: column;
 }
 
 /* Navigation */
@@ -57,7 +44,11 @@ nav ul {
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
+}
+
+nav ul li {
+    margin: 0;
 }
 
 nav ul li a {
@@ -73,7 +64,22 @@ nav ul li a:focus {
     color: #d18b6c;
 }
 
-/* Home */
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.language-switcher img {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Home Section */
 #home {
     text-align: center;
     padding: 80px 20px;
@@ -82,8 +88,8 @@ nav ul li a:focus {
 
 #home h1 {
     font-size: 42px;
-    color: #fffae6;
     margin-bottom: 20px;
+    color: #fffae6;
 }
 
 #home p {
@@ -111,7 +117,7 @@ nav ul li a:focus {
     background-color: #a6754f;
 }
 
-/* Services */
+/* Services Section */
 #services {
     padding: 60px 20px;
     background: #855c42;
@@ -139,6 +145,7 @@ nav ul li a:focus {
 .service-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #fffae6;
 }
 
 .service-price {
@@ -147,7 +154,7 @@ nav ul li a:focus {
     margin-top: 10px;
 }
 
-/* About */
+/* About Us Section */
 #about {
     padding: 60px 20px;
     background: #855c42;
@@ -159,14 +166,14 @@ nav ul li a:focus {
 
 #about h2 {
     font-size: 36px;
+    color: #fffae6;
     margin-bottom: 20px;
 }
 
-/* ✅ Final Updated Doctor Name Style */
 .doctor-names {
-    font-size: 18px;
-    font-weight: 600;
-    color: #b88b4a;
+    font-size: 16px;
+    font-weight: 500;
+    color: #b08e5e;
     letter-spacing: 0.5px;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -174,11 +181,12 @@ nav ul li a:focus {
 
 #about p {
     font-size: 18px;
+    color: #fffae6;
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Contact */
+/* Contact Section */
 #contact {
     padding: 60px 20px;
     background: #6f4f29;
@@ -199,6 +207,7 @@ nav ul li a:focus {
 
 .contact-item {
     background: #4e3629;
+    color: #fffae6;
     padding: 10px 20px;
     border-radius: 8px;
     display: flex;
@@ -240,21 +249,34 @@ footer {
 
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes slideIn {
-    from { opacity: 0; transform: translateX(-20px); }
-    to { opacity: 1; transform: translateX(0); }
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 8px;
+        justify-content: center;
+        gap: 10px;
     }
 
     .contact-box {
@@ -280,6 +302,13 @@ footer {
     }
 
     .doctor-names {
-        font-size: 16px;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+    }
+
+    .language-switcher {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10px;
     }
 }
