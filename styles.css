@@ -122,12 +122,12 @@ nav ul li a {
 }
 
 .doctor-names {
-    font-size: 28px;  /* Smaller than About Us title */
+    font-size: 24px; /* Smaller than About Us title */
     font-weight: bold;
-    color: #d18b6c;  /* Slightly brown color */
+    color: #d18b6c;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    text-transform: uppercase;  /* Stylish, gives a more professional look */
+    text-transform: uppercase; /* Stylish, gives a more professional look */
 }
 
 #about p {
@@ -147,6 +147,7 @@ nav ul li a {
 
 .contact-box {
     display: flex;
+    flex-direction: column; /* Change to vertical layout */
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -169,4 +170,39 @@ nav ul li a {
 }
 
 .copy-btn {
-    background-color: #
+    background-color: #d18b6c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.copy-btn:hover {
+    background-color: #a6754f;
+}
+
+/* Add Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
