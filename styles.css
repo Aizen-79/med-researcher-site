@@ -171,11 +171,11 @@ nav ul li a:focus {
 }
 
 .doctor-names {
-    font-size: 20px;
+    font-size: 16px;           /* smaller than About Us */
     font-weight: 600;
-    color: #cfa974;
-    letter-spacing: 1.5px;
-    margin-bottom: 15px;
+    color: #a57c48;            /* slightly darker than before */
+    letter-spacing: 1px;       /* reduced spacing */
+    margin-bottom: 10px;       /* decreased margin */
     text-transform: uppercase;
 }
 
@@ -275,15 +275,12 @@ footer {
     nav ul {
         flex-direction: row; /* keep horizontal on mobile */
         gap: 10px;
-        justify-content: flex-start;
-        padding-right: 60px; /* space so nav doesn't overlap flags */
-        overflow-x: auto; /* allow horizontal scroll if needed */
-        -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
         margin: 0;
+        padding-right: 80px; /* prevent overlap with flags */
     }
 
     nav ul li {
-        margin: 0 8px;
+        margin: 0;
     }
 
     .contact-box {
@@ -309,6 +306,6 @@ footer {
     }
 
     .doctor-names {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
