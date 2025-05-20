@@ -6,11 +6,6 @@ body {
     line-height: 1.6;
 }
 
-html[dir="rtl"] {
-    direction: rtl;
-    text-align: right;
-}
-
 /* Header Section */
 header {
     background: #6f4f29;
@@ -23,6 +18,7 @@ header {
     align-items: center;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -39,15 +35,6 @@ nav ul li a {
     color: #fffae6;
     font-weight: 600;
     font-size: 18px;
-}
-
-.language-btn {
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    color: #fffae6;
-    cursor: pointer;
-    margin-left: 20px;
 }
 
 /* Home Section */
@@ -136,12 +123,12 @@ nav ul li a {
 }
 
 .doctor-names {
-    font-size: 28px;  /* Smaller than About Us title */
+    font-size: 24px;  /* Decreased font size */
     font-weight: bold;
     color: #d18b6c;  /* Slightly brown color */
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
     margin-bottom: 20px;
-    text-transform: uppercase;  /* Stylish, gives a more professional look */
+    text-transform: uppercase;
 }
 
 #about p {
@@ -161,6 +148,7 @@ nav ul li a {
 
 .contact-box {
     display: flex;
+    flex-direction: column; /* Align items vertically */
     justify-content: center;
     align-items: center;
     gap: 20px;
