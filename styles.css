@@ -8,16 +8,17 @@ body {
     color: #333;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding: 60px 0 0 0; /* padding-top for fixed header */
 }
 
 /* Header Section */
 header {
     background: #6f4f29;
     color: #fffae6;
-    padding: 15px 20px; /* slightly reduced vertical padding */
+    padding: 15px 20px;
+    text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    position: fixed;       /* make header fixed */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -27,71 +28,29 @@ header {
     align-items: center;
 }
 
-/* Add top padding to body to prevent content hiding behind fixed header */
-body {
-    padding-top: 60px; /* height of header + a bit */
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-}
-
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
-    flex-grow: 1;
 }
 
 nav ul li {
-    margin: 0 12px; /* decreased spacing */
+    margin: 0 12px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #fffae6;
     font-weight: 600;
-    font-size: 16px; /* slightly smaller font */
+    font-size: 16px;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
     color: #d18b6c;
-}
-
-/* Language Switcher Styles */
-.lang-switcher {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-left: auto;
-}
-
-.flag {
-    width: 24px;
-    height: 18px;
-    cursor: pointer;
-    opacity: 0.7;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    transition: opacity 0.3s ease, border-color 0.3s ease;
-}
-
-.flag:hover,
-.flag:focus {
-    opacity: 1;
-}
-
-.flag.active {
-    opacity: 1;
-    border-color: #d18b6c;
 }
 
 /* Home Section */
@@ -186,15 +145,14 @@ nav ul li a:focus {
 }
 
 .doctor-names {
-    font-size: 20px;          /* smaller than About Us */
+    font-size: 20px;
     font-weight: 600;
-    color: #cfa974;           /* slightly lighter than #d18b6c */
+    color: #cfa974;
     letter-spacing: 1.5px;
-    margin-bottom: 15px;      /* less margin */
+    margin-bottom: 15px;
     text-transform: uppercase;
 }
 
-/* Adjust About Us paragraph for spacing */
 #about p {
     font-size: 18px;
     color: #fffae6;
@@ -234,21 +192,20 @@ nav ul li a:focus {
 }
 
 .contact-item p {
-    font-size: 18px;
     margin: 0;
-    user-select: text;
+    font-size: 18px;
 }
 
 .copy-btn {
     background-color: #d18b6c;
+    color: #fff;
     border: none;
-    padding: 8px 12px;
+    padding: 8px 15px;
     border-radius: 5px;
-    font-weight: 600;
-    color: white;
     cursor: pointer;
+    font-weight: 600;
     transition: background-color 0.3s ease;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .copy-btn:hover,
@@ -256,24 +213,8 @@ nav ul li a:focus {
     background-color: #a6754f;
 }
 
-/* Footer */
-footer {
-    background: #4e3629;
-    color: #fffae6;
-    padding: 15px 20px;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 14px;
-    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.15);
-}
-
 /* Animations */
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes slideIn {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -284,19 +225,78 @@ footer {
     }
 }
 
-/* Responsive */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Language Switcher */
+#language-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1100;
+    display: flex;
+    gap: 10px;
+}
+
+.lang-icon {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: border-color 0.3s ease;
+    object-fit: contain;
+}
+
+.lang-icon:hover,
+.lang-icon:focus {
+    border-color: #d18b6c;
+    outline: none;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         gap: 10px;
-        margin-top: 10px;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0;
     }
 
     .contact-box {
         flex-direction: column;
+        gap: 15px;
     }
 
     .service-item {
-        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    #services h2,
+    #about h2 {
+        font-size: 28px;
+    }
+
+    .service-item h3 {
+        font-size: 20px;
+    }
+
+    .doctor-names {
+        font-size: 18px;
     }
 }
