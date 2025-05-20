@@ -56,8 +56,10 @@
     <section id="about">
         <h2 id="about-heading" data-en="About Us" data-ar="من نحن">About Us</h2>
         <div class="about-text">
-            <h3 class="doctor-names">Dr. Ahmed & Dr. Doha</h3>
-            <p>We are a dedicated team of dental professionals, committed to providing top-quality research, thesis support, and presentations for dental professionals and students. Our experience and expertise in the field of dentistry enable us to assist you in achieving academic and professional excellence.</p>
+            <h3 class="doctor-names" data-en="Dr. Ahmed & Dr. Doha" data-ar="د. أحمد ود. دعاء">Dr. Ahmed & Dr. Doha</h3>
+            <p data-en="We are a dedicated team of dental professionals, committed to providing top-quality research, thesis support, and presentations for dental professionals and students. Our experience and expertise in the field of dentistry enable us to assist you in achieving academic and professional excellence." data-ar="نحن فريق مكرس من المحترفين في طب الأسنان، ملتزمون بتقديم أبحاث ودعم أطروحات وعروض تقديمية عالية الجودة للمتخصصين في طب الأسنان والطلاب. تتيح لنا خبرتنا وتخصصنا في هذا المجال مساعدتك في تحقيق التميز الأكاديمي والمهني.">
+                We are a dedicated team of dental professionals, committed to providing top-quality research, thesis support, and presentations for dental professionals and students. Our experience and expertise in the field of dentistry enable us to assist you in achieving academic and professional excellence.
+            </p>
         </div>
     </section>
 
@@ -85,6 +87,7 @@
         function toggleLanguage() {
             isArabic = !isArabic;
 
+            // Change text based on the language selected
             const elements = document.querySelectorAll('[data-en], [data-ar]');
             elements.forEach(element => {
                 if (isArabic) {
@@ -94,7 +97,14 @@
                 }
             });
 
-            document.getElementById('language-icon').textContent = isArabic ? '🇬🇧' : '🇸🇦';
+            // Switch language direction for Arabic (right-to-left)
+            if (isArabic) {
+                document.documentElement.setAttribute('dir', 'rtl');
+                document.getElementById('language-icon').textContent = '🇬🇧'; // Switch icon to UK flag
+            } else {
+                document.documentElement.setAttribute('dir', 'ltr');
+                document.getElementById('language-icon').textContent = '🇸🇦'; // Switch icon to Saudi flag
+            }
         }
 
         function copyPhoneNumber(phoneNumber) {
