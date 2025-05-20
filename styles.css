@@ -4,6 +4,7 @@ body {
     background: #f7f7f7;
     color: #333;
     line-height: 1.6;
+    direction: ltr; /* Default direction for English */
 }
 
 /* Header Section */
@@ -34,6 +35,51 @@ nav ul li a {
     color: #fffae6;
     font-weight: 600;
     font-size: 18px;
+}
+
+/* Language Selector (Flag Icons) */
+#language-selector {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+}
+
+.flag-icon {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.flag-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Right to Left Styles */
+html[dir="rtl"] {
+    direction: rtl;
+}
+
+html[dir="rtl"] body {
+    text-align: right;
+}
+
+html[dir="rtl"] nav ul {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .contact-item {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .cta-button {
+    margin-left: 0;
+    margin-right: 20px;
 }
 
 /* Home Section */
@@ -118,24 +164,16 @@ nav ul li a {
 #about h2 {
     font-size: 36px;
     color: #fffae6;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .doctor-names {
-    font-size: 24px;  /* Smaller than About Us title */
+    font-size: 28px;  
     font-weight: bold;
     color: #d18b6c;
-    letter-spacing: 1px;  /* Decreased letter-spacing */
-    margin-top: 10px;
-    margin-bottom: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
     text-transform: uppercase;
-}
-
-#about p {
-    font-size: 18px;
-    color: #fffae6;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 /* Contact Us Section */
