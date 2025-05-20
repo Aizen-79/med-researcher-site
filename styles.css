@@ -18,7 +18,21 @@ header {
     align-items: center;
 }
 
-/* Navigation */
+/* Larger Translation Icon */
+.language-button {
+    font-size: 40px; /* Larger size for the translation button */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.language-button:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Navigation Section */
 nav ul {
     list-style: none;
     display: flex;
@@ -123,10 +137,10 @@ nav ul li a {
 }
 
 .doctor-names {
-    font-size: 24px;  /* Decreased font size */
+    font-size: 28px;
     font-weight: bold;
-    color: #d18b6c;  /* Slightly brown color */
-    letter-spacing: 0.5px;
+    color: #d18b6c;
+    letter-spacing: 1px; /* Reduced spacing */
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -148,9 +162,7 @@ nav ul li a {
 
 .contact-box {
     display: flex;
-    flex-direction: column; /* Align items vertically */
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     gap: 20px;
     animation: slideIn 1s ease-out;
 }
@@ -172,12 +184,13 @@ nav ul li a {
 
 .copy-btn {
     background-color: #d18b6c;
-    color: white;
-    border: none;
+    color: #fff;
     padding: 5px 10px;
+    border: none;
     cursor: pointer;
-    font-size: 14px;
+    font-weight: bold;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 .copy-btn:hover {
