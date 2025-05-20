@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" id="html-element">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>MedTyper - Dental Research and Thesis Services</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <header>
@@ -18,12 +18,6 @@
         </nav>
     </header>
 
-    <!-- Language Selection Icons (UK Flag for English, Saudi Arabia Flag for Arabic) -->
-    <div id="language-selector">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_Kingdom.svg/1920px-Flag_of_the_United_Kingdom.svg.png" alt="English" class="flag-icon" id="english" onclick="setLanguage('en')">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/1920px-Flag_of_Saudi_Arabia.svg.png" alt="Arabic" class="flag-icon" id="arabic" onclick="setLanguage('ar')">
-    </div>
-
     <section id="home">
         <h1>MedTyper</h1>
         <p>Your trusted partner for dental research, thesis support, and presentations.</p>
@@ -34,22 +28,22 @@
         <h2>Our Services</h2>
         <div class="service-item">
             <h3>Thesis Protocols and Researches</h3>
-            <p>We provide highly-precise and scientifically rigorous research protocols tailored to meet your specific needs. Whether you're working on a clinical trial, experimental research, or literature review, we can help you design a structured and comprehensive research framework.</p>
+            <p>We provide highly-precise and scientifically rigorous research protocols tailored to meet your specific needs.</p>
             <p class="service-price">Service Price: 9,000 L.E</p>
         </div>
         <div class="service-item">
             <h3>Master’s and PhD Thesis</h3>
-            <p>We provide comprehensive support for Master's thesis projects in the field of dentistry. From the initial stages of topic selection to the final submission, we ensure that your thesis adheres to academic standards and demonstrates in-depth understanding. We also complete PhD thesis projects, providing the guidance and expertise necessary to ensure your research stands out in the academic community.</p>
+            <p>We provide comprehensive support for Master's and PhD thesis projects in dentistry, from topic selection to final submission.</p>
             <p class="service-price">Service Price: 25,000 - 30,000 L.E</p>
         </div>
         <div class="service-item">
             <h3>Dental Assignments</h3>
-            <p>We offer a range of services for dental students or professionals who need help with assignments in the field of dentistry. Whether it's a clinical case study, a research paper, or a theoretical analysis, we can provide expert guidance and writing, including: PIP, GDP, Essay Writing, Case Studies, Research Papers, and Critical Analysis.</p>
+            <p>We help with case studies, research papers, essays, and more for dental students and professionals.</p>
             <p class="service-price">Service Price: 1,000 - 3,000 L.E</p>
         </div>
         <div class="service-item">
             <h3>PowerPoint and Poster Presentations</h3>
-            <p>Presenting your dental research, thesis, or clinical case study through a well-crafted PowerPoint presentation is critical for effective communication. We provide full PowerPoint or poster presentation services for any academic or professional setting.</p>
+            <p>We design impactful presentations for research, thesis defense, or professional settings.</p>
             <p class="service-price">Service Price: 800 L.E</p>
         </div>
     </section>
@@ -58,7 +52,7 @@
         <h2>About Us</h2>
         <div class="about-text">
             <h2 class="doctor-names">Dr. Ahmed & Dr. Doha</h2>
-            <p>We are a dedicated team of dental professionals, committed to providing top-quality research, thesis support, and presentations for dental professionals and students. Our experience and expertise in the field of dentistry enable us to assist you in achieving academic and professional excellence.</p>
+            <p>We are a dedicated team of dental professionals, committed to providing top-quality research, thesis support, and presentations for dental professionals and students.</p>
         </div>
     </section>
 
@@ -78,23 +72,24 @@
                 <button class="copy-btn" onclick="copyPhoneNumber('+20 112 031 1258')">Copy</button>
             </div>
         </div>
+
+        <!-- Styled Contact Form -->
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
+    <footer>
+        <p>&copy; 2025 MedTyper. All rights reserved.</p>
+    </footer>
+
     <script>
-        function setLanguage(language) {
-            const htmlElement = document.getElementById('html-element');
-
-            if (language === 'en') {
-                htmlElement.lang = 'en';
-                htmlElement.setAttribute('dir', 'ltr');
-            } else if (language === 'ar') {
-                htmlElement.lang = 'ar';
-                htmlElement.setAttribute('dir', 'rtl');
-            }
-
-            window.location.reload();
-        }
-
         function copyPhoneNumber(phoneNumber) {
             navigator.clipboard.writeText(phoneNumber).then(() => {
                 alert("Phone number copied to clipboard!");
