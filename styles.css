@@ -3,268 +3,257 @@
 
 /* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #f7f7f7;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: direction 0.3s ease;
 }
 
 /* Header Section */
 header {
-    background: #6f4f29;
-    color: #fffae6;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background: #6f4f29;
+  color: #fffae6;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 0 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 0 0;
+  padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fffae6;
-    font-weight: 600;
-    font-size: 18px;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #fffae6;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
-    color: #d18b6c;
+  color: #d18b6c;
 }
 
-/* Home Section */
+/* Language Switcher */
+.lang-switcher {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #6f4f29;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+.lang-switcher img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  border-radius: 10px;
+}
+
 #home {
-    text-align: center;
-    padding: 80px 20px;
-    background: #4e3629;
+  text-align: center;
+  background: #4e3629;
+  color: #fffae6;
+  padding-top: 80px;
 }
 
 #home h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-    color: #fffae6;
+  font-size: 42px;
+  margin-bottom: 20px;
 }
 
 #home p {
-    font-size: 18px;
-    color: #fffae6;
-    max-width: 600px;
-    margin: 0 auto;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .cta-button {
-    background-color: #d18b6c;
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 20px;
-    display: inline-block;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
+  background-color: #d18b6c;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover,
 .cta-button:focus {
-    background-color: #a6754f;
+  background-color: #a5613f;
 }
 
 /* Services Section */
 #services {
-    padding: 60px 20px;
-    background: #855c42;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 #services h2 {
-    font-size: 36px;
-    text-align: center;
-    color: #fffae6;
-    margin-bottom: 30px;
+  font-size: 32px;
+  color: #6f4f29;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
 }
 
 .service-item {
-    background: #4e3629;
-    color: #fffae6;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-left: 5px solid #d18b6c;
+  background: #fff9f0;
+  border-radius: 5px;
 }
 
 .service-item h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #fffae6;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #6f4f29;
+  font-size: 22px;
+}
+
+.service-item p {
+  margin-bottom: 8px;
 }
 
 .service-price {
-    font-size: 18px;
-    color: #d18b6c;
-    margin-top: 10px;
+  font-weight: 600;
+  color: #a5613f;
 }
 
-/* About Us Section */
+/* About Section */
 #about {
-    padding: 60px 20px;
-    background: #855c42;
-    color: #fffae6;
-    animation: fadeIn 1s ease-out;
-    margin-top: 30px;
-    text-align: center;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+  border-radius: 10px;
+  padding: 40px 20px;
 }
 
 #about h2 {
-    font-size: 36px;
-    color: #fffae6;
-    margin-bottom: 30px;
+  font-size: 32px;
+  color: #6f4f29;
+  margin-bottom: 20px;
 }
 
-.doctor-names {
-    font-size: 20px;          /* smaller font size */
-    font-weight: bold;
-    color: #c79b7c;           /* lighter shade */
-    letter-spacing: 1px;      /* reduced letter spacing */
-    margin-bottom: 10px;      /* less spacing */
-    text-transform: uppercase;
+.about-text h3.doctor-names {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #7d5a2a; /* slightly lighter than main brown */
+  letter-spacing: 0.5px;
 }
 
-#about p {
-    font-size: 18px;
-    color: #fffae6;
-    max-width: 800px;
-    margin: 0 auto;
+.about-text p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #4b3621;
 }
 
-/* Contact Us Section */
+/* Contact Section */
 #contact {
-    padding: 60px 20px;
-    background: #6f4f29;
-    color: #fffae6;
-    text-align: center;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+#contact h2 {
+  font-size: 32px;
+  color: #6f4f29;
+  margin-bottom: 30px;
 }
 
 .contact-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    animation: slideIn 1s ease-out;
-    flex-wrap: wrap;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.contact-item {
-    background: #4e3629;
-    color: #fffae6;
-    padding: 10px 20px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 260px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-item p {
-    margin: 0;
-    font-size: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4b3621;
+  margin: 0;
 }
 
-.copy-btn {
-    background-color: #d18b6c;
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-    font-size: 16px;
+/* Language toggle visibility */
+/* Show only the current language text */
+.lang-en {
+  display: inline;
+}
+.lang-ar {
+  display: none;
 }
 
-.copy-btn:hover,
-.copy-btn:focus {
-    background-color: #a6754f;
+/* When body lang is 'ar', show Arabic and hide English */
+body[lang="ar"] .lang-en {
+  display: none;
+}
+body[lang="ar"] .lang-ar {
+  display: inline;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* RTL adjustments */
+body[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
 }
 
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+body[dir="rtl"] nav ul {
+  flex-direction: row-reverse;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
-        margin: 10px 0 0 0;
-    }
+body[dir="rtl"] .service-item {
+  border-left: none;
+  border-right: 5px solid #d18b6c;
+}
 
-    .contact-box {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .service-item {
-        margin-bottom: 25px;
-    }
-
-    #home h1 {
-        font-size: 32px;
-    }
-
-    #services h2,
-    #about h2 {
-        font-size: 28px;
-    }
-
-    .service-item h3 {
-        font-size: 20px;
-    }
-
-    .doctor-names {
-        font-size: 18px;
-    }
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .contact-box {
+    flex-direction: column;
+  }
 }
