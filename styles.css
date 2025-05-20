@@ -169,15 +169,17 @@ nav ul li a:focus {
     margin-bottom: 20px;
 }
 
+/* Updated doctor-names styling */
 .doctor-names {
-    font-size: 20px;
+    font-size: 18px;          /* smaller than About Us (which is 36px) */
     font-weight: 600;
-    color: #cfa974;
+    color: #c9b07e;           /* slightly lighter/different from #cfa974 */
     letter-spacing: 1.5px;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
 
+/* Keep the paragraph inside about unchanged */
 #about p {
     font-size: 18px;
     color: #fffae6;
@@ -272,19 +274,14 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
-        display: flex;                      /* ensure flex */
-        flex-direction: row;                /* horizontal layout */
-        gap: 10px;                         /* spacing between tabs */
+        flex-direction: row; /* changed to row to keep horizontal layout on mobile */
+        gap: 10px;
         margin: 0;
-        padding: 0;
-        overflow-x: auto;                   /* enable horizontal scroll */
-        -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
-        justify-content: flex-start;        /* align to left */
+        justify-content: center;
     }
 
     nav ul li {
-        margin: 0 8px;
-        flex-shrink: 0;                    /* prevent shrinking */
+        margin: 0;
     }
 
     .contact-box {
@@ -310,7 +307,7 @@ footer {
     }
 
     .doctor-names {
-        font-size: 18px;
+        font-size: 16px; /* even smaller on mobile */
     }
 }
 
