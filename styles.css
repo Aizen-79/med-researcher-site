@@ -37,19 +37,20 @@ header {
 
 /* Language Switcher */
 .language-switcher {
-    position: absolute;
+    position: fixed;
     top: 10px;
-    right: 20px;
+    right: 10px;
+    z-index: 1001;
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
 .language-switcher img {
-    width: 24px;
-    height: 16px;
+    width: 30px;
+    height: 20px;
     cursor: pointer;
-    border: 1px solid #fff;
-    border-radius: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 /* Navigation */
@@ -169,17 +170,15 @@ nav ul li a:focus {
     margin-bottom: 20px;
 }
 
-/* Updated doctor-names styling */
 .doctor-names {
-    font-size: 18px;          /* smaller than About Us (which is 36px) */
+    font-size: 18px; /* smaller than About Us */
     font-weight: 600;
-    color: #c9b07e;           /* slightly lighter/different from #cfa974 */
+    color: #cfa974cc; /* slightly lighter */
     letter-spacing: 1.5px;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
 
-/* Keep the paragraph inside about unchanged */
 #about p {
     font-size: 18px;
     color: #fffae6;
@@ -274,8 +273,8 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: row; /* changed to row to keep horizontal layout on mobile */
-        gap: 10px;
+        flex-direction: row;
+        gap: 15px;
         margin: 0;
         justify-content: center;
     }
@@ -307,24 +306,12 @@ footer {
     }
 
     .doctor-names {
-        font-size: 16px; /* even smaller on mobile */
+        font-size: 18px;
     }
-}
 
-/* Language switcher flags */
-.language-switcher {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1001;
-    display: flex;
-    gap: 8px;
-}
-
-.language-switcher img {
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    /* Move language switcher down to prevent overlap */
+    .language-switcher {
+        top: 60px; /* pushed below header */
+        right: 10px;
+    }
 }
