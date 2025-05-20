@@ -143,11 +143,11 @@ nav ul li a:focus {
 }
 
 .doctor-names {
-    font-size: 28px;
+    font-size: 20px;          /* smaller font size */
     font-weight: bold;
-    color: #d18b6c;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
+    color: #c79b7c;           /* lighter shade */
+    letter-spacing: 1px;      /* reduced letter spacing */
+    margin-bottom: 10px;      /* less spacing */
     text-transform: uppercase;
 }
 
@@ -265,6 +265,6 @@ nav ul li a:focus {
     }
 
     .doctor-names {
-        font-size: 22px;
+        font-size: 18px;
     }
 }
