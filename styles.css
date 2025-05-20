@@ -14,7 +14,7 @@ header {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -34,6 +34,21 @@ nav ul li a {
     color: #fffae6;
     font-weight: 600;
     font-size: 18px;
+}
+
+/* Language Toggle Button */
+.language-btn {
+    background: none;
+    border: none;
+    font-size: 28px; /* Larger size for the flag */
+    color: #fffae6;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.language-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Home Section */
@@ -122,12 +137,12 @@ nav ul li a {
 }
 
 .doctor-names {
-    font-size: 24px; /* Smaller than About Us title */
+    font-size: 28px;
     font-weight: bold;
     color: #d18b6c;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    text-transform: uppercase; /* Stylish, gives a more professional look */
+    text-transform: uppercase;
 }
 
 #about p {
@@ -147,7 +162,6 @@ nav ul li a {
 
 .contact-box {
     display: flex;
-    flex-direction: column; /* Change to vertical layout */
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -171,38 +185,13 @@ nav ul li a {
 
 .copy-btn {
     background-color: #d18b6c;
-    color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-weight: bold;
+    color: #fff;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .copy-btn:hover {
     background-color: #a6754f;
-}
-
-/* Add Animations */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
