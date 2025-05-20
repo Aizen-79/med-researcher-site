@@ -14,7 +14,7 @@ header {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -118,16 +118,17 @@ nav ul li a {
 #about h2 {
     font-size: 36px;
     color: #fffae6;
-    margin-bottom: 30px;
+    margin-bottom: 10px;  /* Decreased margin between About Us title and the doctor names */
 }
 
 .doctor-names {
-    font-size: 28px; 
+    font-size: 24px;  /* Smaller than About Us title */
     font-weight: bold;
-    color: #d18b6c; 
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    text-transform: uppercase; 
+    color: #d18b6c;
+    letter-spacing: 1px;  /* Decreased letter-spacing to reduce spacing between words */
+    margin-top: 10px;  /* Added small margin on top to space it out a bit from the previous paragraph */
+    margin-bottom: 10px;  /* Reduced margin to decrease spacing */
+    text-transform: uppercase;
 }
 
 #about p {
@@ -147,7 +148,6 @@ nav ul li a {
 
 .contact-box {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -171,18 +171,48 @@ nav ul li a {
 
 .copy-btn {
     background-color: #d18b6c;
-    color: #fff;
-    padding: 8px 15px;
+    color: white;
     border: none;
-    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .copy-btn:hover {
     background-color: #a6754f;
 }
 
-.language-button img {
-    width: 40px;
-    height: auto;
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-box {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
 }
