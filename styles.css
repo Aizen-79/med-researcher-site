@@ -8,7 +8,7 @@ body {
     color: #333;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding: 80px 0 0 0; /* Added padding-top for fixed header */
 }
 
 /* Header Section */
@@ -21,9 +21,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
+    position: fixed !important;  /* fixed header */
     top: 0;
-    z-index: 1000;
+    left: 0;
+    width: 100%;
+    z-index: 9999;  /* very high z-index */
 }
 
 nav ul {
@@ -236,18 +238,6 @@ nav ul li a:focus {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-    }
-
-    body {
-        padding-top: 70px; /* Adjust based on your header height */
-    }
-
     nav ul {
         flex-direction: column;
         gap: 15px;
