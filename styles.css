@@ -4,10 +4,8 @@ body {
     background: #f7f7f7;
     color: #333;
     line-height: 1.6;
-    transition: all 0.3s ease;
 }
 
-/* Header Section */
 header {
     background: #6f4f29;
     color: #fffae6;
@@ -19,132 +17,171 @@ header {
     align-items: center;
 }
 
-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-header nav ul li {
-    display: inline;
+nav ul li {
     margin: 0 15px;
 }
 
-header nav ul li a {
-    color: #fffae6;
+nav ul li a {
     text-decoration: none;
+    color: #fffae6;
+    font-weight: 600;
     font-size: 18px;
-    font-weight: bold;
-}
-
-.language-button {
-    font-size: 30px;
-    padding: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.language-button:hover {
-    transform: scale(1.2);
 }
 
 /* Home Section */
 #home {
     text-align: center;
-    padding: 50px;
-    background: #f4f4f4;
+    padding: 80px 20px;
+    background: #4e3629;
 }
 
 #home h1 {
-    font-size: 48px;
-    color: #6f4f29;
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #fffae6;
 }
 
 #home p {
-    font-size: 20px;
-    color: #333;
+    font-size: 18px;
+    color: #fffae6;
 }
 
 .cta-button {
-    display: inline-block;
-    background-color: #6f4f29;
-    color: white;
+    background-color: #d18b6c;
+    color: #fff;
     padding: 15px 30px;
-    font-size: 18px;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
     margin-top: 20px;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #4e3b1d;
+    background-color: #a6754f;
 }
 
 /* Services Section */
 #services {
-    background: #fff;
-    padding: 50px;
+    padding: 60px 20px;
+    background: #855c42;
 }
 
-.service-item {
+#services h2 {
+    font-size: 36px;
+    text-align: center;
+    color: #fffae6;
     margin-bottom: 30px;
 }
 
-.service-item h3 {
-    font-size: 28px;
-    color: #6f4f29;
+.service-item {
+    background: #4e3629;
+    color: #fffae6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.service-item p {
-    font-size: 16px;
-    color: #666;
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fffae6;
 }
 
 .service-price {
-    font-weight: bold;
     font-size: 18px;
+    color: #d18b6c;
+    margin-top: 10px;
 }
 
-/* About Section */
+/* About Us Section */
 #about {
-    background: #f7f7f7;
-    padding: 50px;
+    padding: 60px 20px;
+    background: #855c42;
+    color: #fffae6;
+    animation: fadeIn 1s ease-out;
+    margin-top: 30px;
     text-align: center;
 }
 
 #about h2 {
     font-size: 36px;
-    color: #6f4f29;
+    color: #fffae6;
+    margin-bottom: 30px;
 }
 
 .doctor-names {
-    font-size: 24px;
-    color: #6f4f29;
-    margin-top: 20px;
+    font-size: 28px; 
+    font-weight: bold;
+    color: #d18b6c; 
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase; 
 }
 
-/* Contact Section */
+#about p {
+    font-size: 18px;
+    color: #fffae6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Us Section */
 #contact {
-    background: #fff;
-    padding: 50px;
+    padding: 60px 20px;
+    background: #6f4f29;
+    color: #fffae6;
     text-align: center;
 }
 
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    animation: slideIn 1s ease-out;
+}
+
 .contact-item {
-    margin: 20px 0;
+    background: #4e3629;
+    color: #fffae6;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+}
+
+.contact-item p {
+    margin-right: 10px;
 }
 
 .copy-btn {
-    background-color: #6f4f29;
-    color: white;
-    padding: 5px 10px;
-    font-size: 14px;
+    background-color: #d18b6c;
+    color: #fff;
+    padding: 8px 15px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .copy-btn:hover {
-    background-color: #4e3b1d;
+    background-color: #a6754f;
+}
+
+.language-button img {
+    width: 40px;
+    height: auto;
 }
