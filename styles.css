@@ -272,13 +272,19 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-        gap: 10px;
+        display: flex;                      /* ensure flex */
+        flex-direction: row;                /* horizontal layout */
+        gap: 10px;                         /* spacing between tabs */
         margin: 0;
+        padding: 0;
+        overflow-x: auto;                   /* enable horizontal scroll */
+        -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+        justify-content: flex-start;        /* align to left */
     }
 
     nav ul li {
-        margin: 0;
+        margin: 0 8px;
+        flex-shrink: 0;                    /* prevent shrinking */
     }
 
     .contact-box {
@@ -307,6 +313,7 @@ footer {
         font-size: 18px;
     }
 }
+
 /* Language switcher flags */
 .language-switcher {
     position: fixed;
