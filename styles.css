@@ -14,7 +14,7 @@ header {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -36,19 +36,13 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Language Toggle Button */
 .language-btn {
-    background: none;
+    background-color: transparent;
     border: none;
-    font-size: 28px; /* Larger size for the flag */
+    font-size: 24px;
     color: #fffae6;
     cursor: pointer;
-    padding: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.language-btn:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 20px;
 }
 
 /* Home Section */
@@ -137,12 +131,12 @@ nav ul li a {
 }
 
 .doctor-names {
-    font-size: 28px;
+    font-size: 28px;  /* Smaller than About Us title */
     font-weight: bold;
-    color: #d18b6c;
-    letter-spacing: 2px;
+    color: #d18b6c;  /* Slightly brown color */
+    letter-spacing: 0;  /* Reduced letter spacing to remove extra space */
     margin-bottom: 20px;
-    text-transform: uppercase;
+    text-transform: uppercase;  /* Stylish, gives a more professional look */
 }
 
 #about p {
@@ -162,7 +156,7 @@ nav ul li a {
 
 .contact-box {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Changed to vertical layout */
     align-items: center;
     gap: 20px;
     animation: slideIn 1s ease-out;
@@ -185,9 +179,9 @@ nav ul li a {
 
 .copy-btn {
     background-color: #d18b6c;
+    color: white;
+    padding: 5px 15px;
     border: none;
-    color: #fff;
-    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
