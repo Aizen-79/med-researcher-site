@@ -178,7 +178,7 @@ nav ul li a:focus {
 .doctor-names {
     font-size: 18px; /* smaller than About Us */
     font-weight: 600;
-    color: #a97f43; /* slightly darker gold */
+    color: #d1aa6a; /* slightly darker gold */
     letter-spacing: 1.5px; /* slightly decreased spacing */
     margin-bottom: 10px; /* decreased spacing below */
     text-transform: uppercase;
