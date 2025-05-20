@@ -8,62 +8,67 @@
 </head>
 <body>
     <!-- Language Switcher -->
-    <div id="language-switcher" style="position: fixed; top: 10px; right: 10px; z-index: 1100;">
-        <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="English" title="English" class="lang-icon" id="en-icon" />
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg" alt="Arabic" title="Arabic" class="lang-icon" id="ar-icon" />
+    <div class="language-switcher">
+        <img src="https://flagcdn.com/gb.svg" alt="English" onclick="switchLanguage('en')" />
+        <img src="https://flagcdn.com/sa.svg" alt="Arabic" onclick="switchLanguage('ar')" />
     </div>
 
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#home" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
+                <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                <li><a href="#about" data-en="About Us" data-ar="من نحن">About Us</a></li>
+                <li><a href="#contact" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home">
-        <h1>MedTyper</h1>
-        <p>Your trusted partner for dental research, thesis support, and presentations.</p>
-        <a href="#services" class="cta-button">Explore Our Services</a>
+        <h1 data-en="MedTyper" data-ar="ميد تايبر">MedTyper</h1>
+        <p data-en="Your trusted partner for dental research, thesis support, and presentations." data-ar="شريكك الموثوق في أبحاث طب الأسنان ودعم الأطروحات والعروض التقديمية."></p>
+        <a href="#services" class="cta-button" data-en="Explore Our Services" data-ar="استكشف خدماتنا">Explore Our Services</a>
     </section>
 
     <section id="services">
-        <h2>Our Services</h2>
+        <h2 data-en="Our Services" data-ar="خدماتنا">Our Services</h2>
+
         <div class="service-item">
-            <h3>Thesis Protocols and Researches</h3>
-            <p>We provide highly-precise and scientifically rigorous research protocols tailored to meet your specific needs. Whether you're working on a clinical trial, experimental research, or literature review, we can help you design a structured and comprehensive research framework.</p>
-            <p class="service-price">Service Price: 9,000 L.E</p>
+            <h3 data-en="Thesis Protocols and Researches" data-ar="بروتوكولات وأبحاث الأطروحات">Thesis Protocols and Researches</h3>
+            <p data-en="We provide highly-precise and scientifically rigorous research protocols tailored to meet your specific needs." data-ar="نقدم بروتوكولات بحث دقيقة وعلمية مصممة خصيصًا لتلبية احتياجاتك."></p>
+            <p data-en="Whether you're working on a clinical trial, experimental research, or literature review, we can help you design a structured and comprehensive research framework." data-ar="سواء كنت تعمل على تجربة سريرية أو بحث تجريبي أو مراجعة أدبية، يمكننا مساعدتك في تصميم إطار بحث منظم وشامل."></p>
+            <p class="service-price" data-en="Service Price: 9,000 L.E" data-ar="سعر الخدمة: 9,000 جنيه">Service Price: 9,000 L.E</p>
         </div>
+
         <div class="service-item">
-            <h3>Master’s and PhD Thesis</h3>
-            <p>We provide comprehensive support for Master's and PhD thesis projects in dentistry, from topic selection to final submission, we ensure that your thesis adheres to academic standards and demonstrates in-depth understanding. We also complete PhD thesis projects, providing the guidance and expertise necessary to ensure your research stands out in the academic community.</p>
-            <p class="service-price">Service Price: 25,000 - 30,000 L.E</p>
+            <h3 data-en="Master’s and PhD Thesis" data-ar="أطروحات الماجستير والدكتوراه">Master’s and PhD Thesis</h3>
+            <p data-en="We provide comprehensive support for Master's and PhD thesis projects in dentistry, from topic selection to final submission, we ensure that your thesis adheres to academic standards and demonstrates in-depth understanding. We also complete PhD thesis projects, providing the guidance and expertise necessary to ensure your research stands out in the academic community." data-ar="نقدم دعمًا شاملاً لمشاريع أطروحة الماجستير والدكتوراه في طب الأسنان، من اختيار الموضوع إلى التسليم النهائي، ونتأكد من التزام الأطروحة بالمعايير الأكاديمية وتقديم فهم عميق. كما نكمل مشاريع أطروحة الدكتوراه مع توفير الإرشاد والخبرة اللازمة لتمييز بحثك في المجتمع الأكاديمي."></p>
+            <p class="service-price" data-en="Service Price: 25,000 - 30,000 L.E" data-ar="سعر الخدمة: 25,000 - 30,000 جنيه">Service Price: 25,000 - 30,000 L.E</p>
         </div>
+
         <div class="service-item">
-            <h3>Dental Assignments</h3>
-            <p>We offer a range of services for dental students or professionals who need help with assignments in the field of dentistry. Whether it's a clinical case study, a research paper, or a theoretical analysis, we can provide expert guidance and writing, including: PIP and GDP assidnments, Essay Writing, Case Studies, Research Papers, and Critical Analysis.</p>
-            <p class="service-price">Service Price: 1,000 - 3,000 L.E</p>
+            <h3 data-en="Dental Assignments" data-ar="مهام طب الأسنان">Dental Assignments</h3>
+            <p data-en="We offer a range of services for dental students or professionals who need help with assignments in the field of dentistry. Whether it's a clinical case study, a research paper, or a theoretical analysis, we can provide expert guidance and writing, including: PIP and GDP assignments, Essay Writing, Case Studies, Research Papers, and Critical Analysis." data-ar="نقدم مجموعة من الخدمات للطلاب أو المهنيين في مجال طب الأسنان الذين يحتاجون إلى مساعدة في المهام. سواء كانت دراسة حالة سريرية، أو ورقة بحثية، أو تحليل نظري، فإننا نقدم الإرشاد والكتابة الاحترافية بما في ذلك: مهام PIP وGDP، كتابة المقالات، دراسات الحالة، الأوراق البحثية، والتحليل النقدي."></p>
+            <p class="service-price" data-en="Service Price: 1,000 - 3,000 L.E" data-ar="سعر الخدمة: 1,000 - 3,000 جنيه">Service Price: 1,000 - 3,000 L.E</p>
         </div>
+
         <div class="service-item">
-            <h3>PowerPoint and Poster Presentations</h3>
-            <p>Presenting your dental research, thesis, or clinical case study through a well-crafted PowerPoint presentation is critical for effective communication. We provide full PowerPoint or poster presentation services for any academic or professional setting.</p>
-            <p class="service-price">Service Price: 800 L.E</p>
+            <h3 data-en="PowerPoint and Poster Presentations" data-ar="عروض باوربوينت والبروشورات">PowerPoint and Poster Presentations</h3>
+            <p data-en="Presenting your dental research, thesis, or clinical case study through a well-crafted PowerPoint presentation is critical for effective communication. We provide full PowerPoint or poster presentation services for any academic or professional setting." data-ar="عرض أبحاثك أو أطروحتك أو دراسة الحالة السريرية الخاصة بك من خلال عرض باوربوينت مصمم جيدًا أمر بالغ الأهمية للتواصل الفعال. نقدم خدمات عروض باوربوينت أو البوسترات الكاملة لأي مناسبة أكاديمية أو مهنية."></p>
+            <p class="service-price" data-en="Service Price: 800 L.E" data-ar="سعر الخدمة: 800 جنيه">Service Price: 800 L.E</p>
         </div>
     </section>
 
     <section id="about">
-        <h2>About Us</h2>
+        <h2 data-en="About Us" data-ar="من نحن">About Us</h2>
         <div class="about-text">
             <h2 class="doctor-names">Dr. Ahmed & Dr. Doha</h2>
-            <p>We are a dedicated team of dental professionals, committed to providing top-quality research, thesis support, and presentations for dental professionals and students.</p>
+            <p data-en="We are a dedicated team of dental professionals, committed to providing top-quality research, thesis support, and presentations for dental professionals and students." data-ar="نحن فريق مكرس من المتخصصين في طب الأسنان، ملتزمون بتقديم أبحاث عالية الجودة ودعم للأطروحات والعروض التقديمية للمهنيين والطلاب في مجال طب الأسنان."></p>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
+        <h2 data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h2>
         <div class="contact-box">
             <div class="contact-item">
                 <p>+20 101 899 8289</p>
@@ -91,24 +96,12 @@
             });
         }
 
-        // Language switcher logic
-        const enIcon = document.getElementById('en-icon');
-        const arIcon = document.getElementById('ar-icon');
-
-        enIcon.style.cursor = 'pointer';
-        arIcon.style.cursor = 'pointer';
-
-        enIcon.onclick = () => {
-            document.documentElement.lang = 'en';
-            document.body.dir = 'ltr';
-            alert("Switched to English");
-        };
-
-        arIcon.onclick = () => {
-            document.documentElement.lang = 'ar';
-            document.body.dir = 'rtl';
-            alert("Switched to Arabic");
-        };
+        function switchLanguage(lang) {
+            const elements = document.querySelectorAll('[data-en]');
+            elements.forEach(el => {
+                el.textContent = el.getAttribute(`data-${lang}`);
+            });
+        }
     </script>
 </body>
 </html>
