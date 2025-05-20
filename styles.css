@@ -1,7 +1,5 @@
-/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-/* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
     background: #f7f7f7;
@@ -9,21 +7,19 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    padding-top: 60px; /* for fixed header */
+    padding-top: 60px;
 }
 
-/* RTL Support */
 html[dir="rtl"] body {
     direction: rtl;
     text-align: right;
 }
 
-/* Header Section */
+/* Header */
 header {
     background: #6f4f29;
     color: #fffae6;
     padding: 15px 20px;
-    text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
@@ -60,10 +56,8 @@ nav ul {
     justify-content: center;
     margin: 0;
     padding: 0;
-}
-
-nav ul li {
-    margin: 0 12px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 nav ul li a {
@@ -79,7 +73,7 @@ nav ul li a:focus {
     color: #d18b6c;
 }
 
-/* Home Section */
+/* Home */
 #home {
     text-align: center;
     padding: 80px 20px;
@@ -88,8 +82,8 @@ nav ul li a:focus {
 
 #home h1 {
     font-size: 42px;
-    margin-bottom: 20px;
     color: #fffae6;
+    margin-bottom: 20px;
 }
 
 #home p {
@@ -117,7 +111,7 @@ nav ul li a:focus {
     background-color: #a6754f;
 }
 
-/* Services Section */
+/* Services */
 #services {
     padding: 60px 20px;
     background: #855c42;
@@ -145,7 +139,6 @@ nav ul li a:focus {
 .service-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #fffae6;
 }
 
 .service-price {
@@ -154,7 +147,7 @@ nav ul li a:focus {
     margin-top: 10px;
 }
 
-/* About Us Section */
+/* About */
 #about {
     padding: 60px 20px;
     background: #855c42;
@@ -166,27 +159,26 @@ nav ul li a:focus {
 
 #about h2 {
     font-size: 36px;
-    color: #fffae6;
     margin-bottom: 20px;
 }
 
+/* ✅ Final Updated Doctor Name Style */
 .doctor-names {
-    font-size: 18px; /* smaller than About Us */
+    font-size: 18px;
     font-weight: 600;
-    color: #cfa974cc; /* slightly lighter */
-    letter-spacing: 1.5px;
+    color: #b88b4a;
+    letter-spacing: 0.5px;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
 
 #about p {
     font-size: 18px;
-    color: #fffae6;
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Contact Section */
+/* Contact */
 #contact {
     padding: 60px 20px;
     background: #6f4f29;
@@ -207,7 +199,6 @@ nav ul li a:focus {
 
 .contact-item {
     background: #4e3629;
-    color: #fffae6;
     padding: 10px 20px;
     border-radius: 8px;
     display: flex;
@@ -249,38 +240,21 @@ footer {
 
 /* Animations */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: row;
-        gap: 15px;
-        margin: 0;
-        justify-content: center;
-    }
-
-    nav ul li {
-        margin: 0;
+        flex-wrap: wrap;
+        gap: 8px;
     }
 
     .contact-box {
@@ -306,12 +280,6 @@ footer {
     }
 
     .doctor-names {
-        font-size: 18px;
-    }
-
-    /* Move language switcher down to prevent overlap */
-    .language-switcher {
-        top: 60px; /* pushed below header */
-        right: 10px;
+        font-size: 16px;
     }
 }
