@@ -5,66 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MedTyper - Dental Research and Thesis Services</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
-                <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
-                <li><a href="#about" data-en="About" data-ar="معلومات عنا">About</a></li>
-                <li><a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
-                <li><button onclick="toggleLanguage()">🌐</button></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home">
-        <h1 data-en="Welcome to MedTyper" data-ar="مرحبًا بكم في ميد تايبر">Welcome to MedTyper</h1>
-        <p data-en="We specialize in dental research and thesis writing services." data-ar="نحن متخصصون في أبحاث طب الأسنان وخدمات كتابة الرسائل.">
-            We specialize in dental research and thesis writing services.
-        </p>
-        <a href="#contact" class="cta-button" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
+        <h1>MedTyper</h1>
+        <p>Your trusted partner for dental research, thesis support, and presentations.</p>
+        <a href="#services" class="cta-button">Explore Our Services</a>
     </section>
 
     <section id="services">
-        <h2 data-en="Our Services" data-ar="خدماتنا">Our Services</h2>
+        <h2>Our Services</h2>
         <div class="service-item">
-            <h3 data-en="Research Writing" data-ar="كتابة الأبحاث">Research Writing</h3>
-            <p data-en="High-quality research writing tailored to your needs." data-ar="كتابة أبحاث عالية الجودة مصممة خصيصًا لاحتياجاتك.">
-                High-quality research writing tailored to your needs.
-            </p>
+            <h3>Thesis Protocols and Researches</h3>
+            <p>We provide highly-precise and scientifically rigorous research protocols tailored to meet your specific needs. Whether you're working on a clinical trial, experimental research, or literature review, we can help you design a structured and comprehensive research framework.</p>
+            <p class="service-price">Service Price: 9,000 L.E</p>
         </div>
         <div class="service-item">
-            <h3 data-en="Thesis Support" data-ar="دعم الرسائل العلمية">Thesis Support</h3>
-            <p data-en="Expert guidance for your dental thesis." data-ar="إرشاد خبير لأطروحة طب الأسنان الخاصة بك.">
-                Expert guidance for your dental thesis.
-            </p>
+            <h3>Master’s and PhD Thesis</h3>
+            <p>We provide comprehensive support for Master's thesis projects in the field of dentistry. From the initial stages of topic selection to the final submission, we ensure that your thesis adheres to academic standards and demonstrates in-depth understanding. We also complete PhD thesis projects, providing the guidance and expertise necessary to ensure your research stands out in the academic community.</p>
+            <p class="service-price">Service Price: 25,000 - 30,000 L.E</p>
         </div>
         <div class="service-item">
-            <h3 data-en="Editing & Proofreading" data-ar="التحرير والتدقيق اللغوي">Editing & Proofreading</h3>
-            <p data-en="Professional editing services for academic excellence." data-ar="خدمات تحرير احترافية للتميز الأكاديمي.">
-                Professional editing services for academic excellence.
-            </p>
+            <h3>Dental Assignments</h3>
+            <p>We offer a range of services for dental students or professionals who need help with assignments in the field of dentistry. Whether it's a clinical case study, a research paper, or a theoretical analysis, we can provide expert guidance and writing, including: PIP, GDP, Essay Writing, Case Studies, Research Papers, and Critical Analysis.</p>
+            <p class="service-price">Service Price: 1,000 - 3,000 L.E</p>
+        </div>
+        <div class="service-item">
+            <h3>PowerPoint and Poster Presentations</h3>
+            <p>Presenting your dental research, thesis, or clinical case study through a well-crafted PowerPoint presentation is critical for effective communication. We provide full PowerPoint or poster presentation services for any academic or professional setting.</p>
+            <p class="service-price">Service Price: 800 L.E</p>
         </div>
     </section>
 
     <section id="about">
-        <h2 data-en="About Us" data-ar="معلومات عنا">About Us</h2>
-        <p data-en="MedTyper is dedicated to helping dental researchers succeed." data-ar="تكرس ميد تايبر جهودها لمساعدة الباحثين في مجال طب الأسنان على النجاح.">
-            MedTyper is dedicated to helping dental researchers succeed.
-        </p>
+        <h2>About Us</h2>
+        <div class="about-text">
+            <h2 class="doctor-names">Dr. Ahmed & Dr. Doha</h2>
+            <p>We are a dedicated team of dental professionals, committed to providing top-quality research, thesis support, and presentations for dental professionals and students. Our experience and expertise in the field of dentistry enable us to assist you in achieving academic and professional excellence.</p>
+        </div>
     </section>
 
     <section id="contact">
-        <h2 data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h2>
-        <p id="doctor-names" data-en="Dr. Amani & Dr. Lojain" data-ar="د. أماني & د. لجين">Dr. Amani & Dr. Lojain</p>
-        <p>
-            <span data-en="WhatsApp:" data-ar="واتساب:">WhatsApp:</span> 
-            <button class="copy-btn" onclick="copyPhoneNumber('+966556431223')">+966556431223</button>
-            <button class="copy-btn" onclick="copyPhoneNumber('+966599246006')">+966599246006</button>
-        </p>
+        <h2>Contact Us</h2>
+        <div class="contact-box">
+            <div class="contact-item">
+                <p>+20 101 899 8289</p>
+                <button class="copy-btn" onclick="copyPhoneNumber('+20 101 899 8289')">Copy</button>
+            </div>
+            <div class="contact-item">
+                <p>+20 106 315 2783</p>
+                <button class="copy-btn" onclick="copyPhoneNumber('+20 106 315 2783')">Copy</button>
+            </div>
+            <div class="contact-item">
+                <p>+20 112 031 1258</p>
+                <button class="copy-btn" onclick="copyPhoneNumber('+20 112 031 1258')">Copy</button>
+            </div>
+        </div>
     </section>
 
     <script>
@@ -72,19 +79,6 @@
             navigator.clipboard.writeText(phoneNumber).then(() => {
                 alert("Phone number copied to clipboard!");
             });
-        }
-
-        function toggleLanguage() {
-            var elements = document.querySelectorAll('[data-en]');
-            elements.forEach(function (element) {
-                var lang = document.documentElement.lang;
-                if (lang === 'en') {
-                    element.textContent = element.getAttribute('data-ar');
-                } else {
-                    element.textContent = element.getAttribute('data-en');
-                }
-            });
-            document.documentElement.lang = (document.documentElement.lang === 'en') ? 'ar' : 'en';
         }
     </script>
 </body>
