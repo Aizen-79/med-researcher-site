@@ -18,6 +18,9 @@
         </nav>
     </header>
 
+    <!-- Google Translate Button (Positioned at the top right) -->
+    <div id="google_translate_element" style="position: fixed; top: 20px; right: 20px; z-index: 1000;"></div>
+
     <section id="home">
         <h1>MedTyper</h1>
         <p>Your trusted partner for dental research, thesis support, and presentations.</p>
@@ -73,6 +76,18 @@
             </div>
         </div>
     </section>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en', // Default language is English
+                includedLanguages: 'en,ar', // Include Arabic for translation
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <script>
         function copyPhoneNumber(phoneNumber) {
