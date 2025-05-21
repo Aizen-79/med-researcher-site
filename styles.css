@@ -352,13 +352,14 @@ footer {
 /* Payment Methods Section */
 #payment-methods {
     padding: 60px 20px;
-    background-color: #f7f7f7;
+    background-color: #6f4f29; /* matches contact and header background */
     text-align: center;
+    color: #fffae6;
 }
 
 #payment-methods h2 {
     font-size: 32px;
-    color: #4e3629;
+    color: #fffae6;
     margin-bottom: 30px;
 }
 
@@ -371,10 +372,13 @@ footer {
 }
 
 .payment-logos img {
-    max-width: 150px;
-    height: auto;
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    background-color: #fff; /* white background for contrast */
+    padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     transition: transform 0.3s ease;
 }
 
@@ -392,7 +396,9 @@ footer {
     }
 
     .payment-logos img {
-        max-width: 120px;
+        width: 120px;
+        height: 80px;
+        padding: 8px;
     }
 }
 
