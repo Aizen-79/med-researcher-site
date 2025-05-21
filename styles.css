@@ -376,7 +376,7 @@ footer {
     height: 100px;
     object-fit: contain;
     background-color: #fff; /* white background for contrast */
-    padding: 10px;
+    padding: 4px;
     border-radius: 8px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     transition: transform 0.3s ease;
