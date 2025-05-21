@@ -352,7 +352,7 @@ footer {
 /* Payment Methods Section */
 #payment-methods {
     padding: 60px 20px;
-    background-color: #5d3f22; /* slightly darker than contact section */
+    background-color: #4a311d; /* darker than contact, lighter than footer */
     text-align: center;
     color: #fffae6;
 }
