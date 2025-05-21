@@ -376,7 +376,7 @@ footer {
     height: 100px;
     object-fit: cover; /* zoom effect inside fixed container */
     background-color: #fff;
-    padding: 12px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
@@ -400,4 +400,13 @@ footer {
         height: 80px;
         padding: 8px;
     }
+}
+/* Slightly reduce the size of the second payment logo */
+.payment-logos img:nth-of-type(2) {
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.payment-logos img:nth-of-type(2):hover {
+    transform: scale(1.05); /* Match hover zoom of others */
 }
