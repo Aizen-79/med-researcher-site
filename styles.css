@@ -352,7 +352,7 @@ footer {
 /* Payment Methods Section */
 #payment-methods {
     padding: 60px 20px;
-    background-color: #7a5536; /* Slightly lighter than footer, darker than contact */
+    background-color: #5d3f22; /* slightly darker than contact section */
     text-align: center;
     color: #fffae6;
 }
@@ -374,11 +374,11 @@ footer {
 .payment-logos img {
     width: 150px;
     height: 100px;
-    object-fit: contain;
-    background-color: #fff; /* white background for contrast */
-    padding: 4px;
+    object-fit: cover; /* zoom effect inside fixed container */
+    background-color: #fff;
+    padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
 }
 
@@ -399,9 +399,5 @@ footer {
         width: 120px;
         height: 80px;
         padding: 8px;
-    }
-}
-
-        font-size: 24px;
     }
 }
